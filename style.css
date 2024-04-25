@@ -1,0 +1,102 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #8db9fc;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* Estilos para o título no cabeçalho */
+header h1 {
+    margin: 0;
+}
+
+  /* Estilos para a caixa de código */
+  .caixa-codigo {
+    border: 1px solid #5bcbff;
+    border-radius: 10px;
+    padding:20px;
+    text-align: left;
+    background-color: #030303;
+    margin-bottom: 20px;
+    height: auto; /* Altura automática */
+    overflow-x: auto; /* Adiciona barra de rolagem horizontal se necessário */
+    
+}
+
+/* Estilos para o título da caixa de código */
+.caixa-codigo h2 {
+    margin-top: 0;
+    color: #fff;
+}
+
+/* Estilos para o código HTML */
+.codigo-html {
+    text-align: left;
+    font-family: 'Courier New', monospace;
+    color: #007bff; /* Azul */
+    
+}
+
+ /* Estilos para a caixa de exemplo */
+ .caixa-exemplo {
+    border: 1px solid #5bcbff;
+    border-radius: 10px;
+    padding:20px;
+    text-align: left;
+    background-color: #d6d6d6;
+    margin-bottom: 20px;
+    width: 80%; /* Largura da caixa de código */
+    max-width: 600px; /* Largura máxima da caixa de código */
+    height: auto; /* Altura automática */
+    overflow-x: auto; /* Adiciona barra de rolagem horizontal se necessário */
+    
+}
+
+/* Estilos para os links no menu de navegação */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* Estilos para os links no menu de navegação quando hover */
+nav a:hover {
+    background-color: #555;
+}
+
+/* Estilos para as seções */
+section {
+    padding: 20px;
+}
+
+/* Estilos para os títulos das seções */
+section h2 {
+    margin-bottom: 10px;
+}
+
+/* Estilos para o formulário de contato */
+form {
+    margin-top: 20px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}

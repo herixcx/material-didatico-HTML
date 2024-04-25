@@ -3,9 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Material Didático HTML</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Material Didático HTML</h1>
+    </header>
+
+    <!-- EXEMPLOS BÁSICOS-->
+    <section id="exemplosb">
+        <h2>Exemplos básicos de HTML</h2>
+        <p>Para nossos primeiros passos, mostraremos alguns exemplos básicos de HTML. Mas não se preocupe se usarmos tags que você ainda não conhece.</p>
+        <h2>● DOCUMENTOS HTML</h2>
+        <P>Todos os documentos HTML devem começar com uma declaração de tipo de documento: &lt; !DOCTYPE &gt;.<br>
+
+            O próprio documento HTML começa &lt;html&gt; e termina com &lt;/html&gt;.<br>
+            
+            A parte visível do documento HTML está entre &lt;body&gt; e &lt;/body&gt;.</P>
+
+            <div class="caixa-codigo">
+                <h2>Exemplo de Código HTML</h2>
+                <pre class="codigo-html">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang=&quot;pt-BR&quot;&gt;
+                    &lt;head&gt;
+                    &lt;meta charset=&quot;UTF-8&quot;&gt;
+                    &lt;title&gt;Minha Página HTML&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    &lt;h1&gt;Olá, mundo!&lt;/h1&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </pre>
+            </div>
+            <br>
+
+            <h2>● A DECLARAÇÃO &lt;!DOCTYPE&gt;</h2>
+            <p>A &lt;!DOCTYPE&gt; declaração representa o tipo de documento e ajuda os navegadores a exibir as páginas da web corretamente.
+                <br>
+                Deve aparecer apenas uma vez, no topo da página (antes de qualquer tag HTML).
+                <br>
+                A &lt;!DOCTYPE&gt; declaração não diferencia maiúsculas de minúsculas.
+                <br>
+                A &lt;!DOCTYPE&gt; declaração para HTML5 é:</P>
+                
+                <div class="caixa-codigo">
+                    <pre class="codigo-html">
+                        &lt;!DOCTYPE html&gt;
+                    </pre>
+                </div>
+                <br>
+
+                <h2>● CABEÇALHOS HTML</h2>
+                <p>Os títulos HTML são definidos com as tags de &lt;h1&gt; até &lt;h6&gt;.<br>
+                &lt;h1&gt; define o título mais importante. &lt;h6&gt; define o título menos importante: </p>
+                <div class="caixa-codigo">
+                    <h2>Exemplo Código HTML:</h2>
+                    <pre class="codigo-html">
+                        &lt;h1&gt;Título 1&lt;/h1&gt;
+                        &lt;h2&gt;Título 2&lt;/h2&gt;
+                        &lt;h3&gt;Título 3&lt;/h3&gt;
+                    </pre>
+                </div>
+                <div class="caixa-exemplo">
+                <h2>Exemplo:</h2>
+                        <h1>Título 1</h1>
+                        <h2>Título 2</h2>
+                        <h3>Título 3</h3>
+                    </pre>
+                </div>
+                <br>
+
+                <h2>● PARÁGRAFOS HTML</h2>
+                <p>Os parágrafos HTML são definidos com a tag &lt;p&gt;</p>
+                <div class="caixa-codigo">
+                    <h2>Exemplo Código HTML:</h2>
+                    <pre class="codigo-html">
+                        &lt;p&gt;Isso é um parágrafo.&lt;/p&gt;
+                        &lt;p&gt;Isso é outro parágrafo.&lt;/p&gt;
+                    </pre>
+                </div>
+                <div class="caixa-exemplo">
+                <h2>Exemplo:</h2>
+                        <p>Isso é um parágrafo.</p>
+                        <p>Isso é outro parágrafo.</p>
+                    </pre>
+                </div>
+                <br>
+
+                <h2>● LINK HTML</h2>
+                <p>Links HTML são definidos com a tag &lt;a&gt;. <br>
+                    O destino do link é especificado no href atributo.<br> 
+                    Os atributos são usados ​​para fornecer informações adicionais sobre os elementos HTML. </p>
+                    <div class="caixa-codigo">
+                       <h2>Exemplo Código HTML:</h2>
+                       <pre class="codigo-html">
+                        &lt;a href="https://www.google.com"&gt; Isso é um LINK &lt;/a&gt;
+                      </pre>
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                        <a href="https://www.google.com">Isso é um LINK</a>
+                    </div>
+                    <br>
+
+                    <h2>● IMAGENS HTML</h2>
+                    <p>As imagens HTML são definidas com a tag &lt;img&gt;. <br>
+                        O arquivo de origem ( src), o texto alternativo ( alt), widthe heightsão fornecidos como atributos: </p>
+                        <div class="caixa-codigo">
+                           <h2>Exemplo Código HTML:</h2>
+                           <pre class="codigo-html">
+                            &lt;img src="img/prog.png" alt="logo programação" width="200" height="200"&gt;
+                          </pre>
+                        </div>
+                        <div class="caixa-exemplo">
+                            <h2>Exemplo:</h2>
+                            <img src="img/prog.png" alt="logo programação" width="200" height="200">
+                        </div>
+                        <br>                
+
+
+    </section>
     
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <ul>
+            <li>Serviço 1</li>
+            <li>Serviço 2</li>
+            <li>Serviço 3</li>
+        </ul>
+    </section>
+    
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco através do formulário abaixo:</p>
+        <form>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem"></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    
+    <footer>
+        <p>&co
 </body>
 </html>
