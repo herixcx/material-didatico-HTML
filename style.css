@@ -24,6 +24,12 @@ h2 {
     color:#007bff
     
 }
+
+h3 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#65b0ff
+    
+}
 /* Estilos para o título no cabeçalho */
 header h1 {
     margin: 0;

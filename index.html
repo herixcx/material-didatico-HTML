@@ -210,7 +210,120 @@
                 ➢ Os atributos fornecem informações adicionais sobre os elementos<br>
                 ➢ Os atributos são sempre especificados na tag inicial<br>
                 ➢ Os atributos geralmente vêm em pares nome/valor como: nome="valor"</p><br>
+
                 <h3>● ATRIBUTO HREF</h3>
+                <p>A tag &lt;a&gt; tag define um hiperlink. O href atributo especifica o URL da página para a qual o link leva</p>
+                <div class="caixa-codigo">
+                    <h2>Exemplo Código HTML:</h2>
+                    <pre class="codigo-html">
+                        &lt;a href="https://www.google.com"&gt; Ir para Google &lt;/a&gt;
+                   </pre>
+                 </div>
+                 <div class="caixa-exemplo">
+                     <h2>Exemplo:</h2>
+                     <a href="https://www.google.com">Ir para Google</a>
+                 </div>
+                 <br>
+
+                 <h3>● ATRIBUTO SRC </h3>
+                 <p>A tag &lt;img&gt; é usada para incorporar uma imagem em uma página HTML. O src atributo especifica o caminho para a imagem a ser exibida. <br>
+                    Existem duas maneiras de especificar o URL no src atributo:<br><br>
+                    ➢ URL ABSOLUTA = Links para uma imagem externa hospedada em outro site. Exemplo: src="https://www.google.com/img/dog.png".<br>
+                    ➢ URL RELATIVO = Links para uma imagem hospedada no site. Aqui, o URL não inclui o nome de domínio. Se o URL começar sem barra, será relativo à página atual. Exemplo: src="dog.png". Se o URL começar com uma barra, será relativo ao domínio. Exemplo: src="/img/dog.png".
+                </p>
+                <div class="caixa-exemplo">
+                    <h2>Exemplo:</h2>
+                    <img src="img/dog.png" width="200" height="200">
+                </div>
+                <br>
+
+                <h3>● ATRIBUTOS DE ALTURA E LARGURA </h3>
+                <p>A tag &lt;img&gt; também deve conter os atributos widthe height, que especificam a largura e a altura da imagem (em pixels):</p>
+                <div class="caixa-codigo">
+                    <h2>Exemplo Código HTML:</h2>
+                    <pre class="codigo-html">
+                        &lt;img src="img/dog.png" width="500" height="600"&gt;
+                   </pre>
+                 </div>
+                 <div class="caixa-exemplo">
+                     <h2>Exemplo:</h2>
+                     <img src="img/dog.png" width="500" height="600">
+                 </div>
+                 <br>
+
+                 <h3>● ATRIBUTO ALTERNATIVO</h3>
+                 <p>O atributo alt obrigatório para a tag &lt;img&gt;, especifica um texto alternativo para uma imagem, se a imagem por algum motivo não puder ser exibida. Isso pode ser devido a uma conexão lenta, ou a um erro no srcatributo, ou se o usuário utiliza um leitor de tela.</p>
+                 <div class="caixa-codigo">
+                    <h2>Exemplo Código HTML:</h2>
+                    <pre class="codigo-html">
+                        &lt;img src="img/dog.png" alt="Desenho Cachorro Fofinho"&gt;
+                   </pre>
+                 </div>
+                 <div class="caixa-exemplo">
+                     <h2>Exemplo:</h2>
+                     <img src="img/dog" alt="Desenho Cachorro Fofinho" width="200" height="200">
+                 </div>
+                 <br>
+
+                 <h3>● ATRIBUTO STYLE</h3>
+                 <p>O atributo style é usado para adicionar estilos a um elemento, como cor, fonte, tamanho e muito mais.</p>
+                 <div class="caixa-codigo">
+                    <h2>Exemplo Código HTML:</h2>
+                    <pre class="codigo-html">
+                        &lt;p style="color:green;"&gt;Isso é um parágrafo verde.&lt;/p&gt;
+                   </pre>
+                 </div>
+                 <div class="caixa-exemplo">
+                     <h2>Exemplo:</h2>
+                     <p style="color:green;">Isso é um parágrafo verde.</p>
+                 </div>
+                 <br>
+
+                 <h3>● ATRIBUTO LANG</h3>
+                 <p>Você deve sempre incluir o atributo lang dentro da tag &lt;html&gt;, para declarar o idioma da página web. O objetivo é ajudar os mecanismos de pesquisa e navegadores.<br>
+                    O exemplo a seguir especifica o inglês como idioma:</p>
+                 <div class="caixa-codigo">
+                    <h2>Exemplo Código HTML:</h2>
+                    <pre class="codigo-html">
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html lang="en"&gt;
+                        &lt;body&gt;
+                        ...
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                   </pre>
+                 </div>
+                 <br>
+                 <p>Os códigos de país também podem ser adicionados ao código do idioma no atributo lang. Assim, os dois primeiros caracteres definem o idioma da página HTML e os dois últimos caracteres definem o país.<br>
+                    O exemplo a seguir especifica inglês como idioma e Estados Unidos como país:</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html lang="en-US"&gt;
+                            &lt;body&gt;
+                            ...
+                            &lt;/body&gt;
+                            &lt;/html&gt;
+                       </pre>
+                     </div>
+                     <br>
+
+                     <h3>● ATRIBUTOS DO TÍTULO </h3>
+                <p>O atributo title define algumas informações extras sobre um elemento.<br>
+                    O valor do atributo title será exibido como uma dica de ferramenta quando você passar o mouse sobre o elemento:</p>
+                <div class="caixa-codigo">
+                    <h2>Exemplo Código HTML:</h2>
+                    <pre class="codigo-html">
+                        &lt;p title="Eu sou uma dica"&gt;Esse é um parágrafo.&lt;/p&gt;
+                   </pre>
+                 </div>
+                 <div class="caixa-exemplo">
+                     <h2>Exemplo:</h2>
+                     <p title="Eu sou uma dica">Esse é um parágrafo.</p>
+                 </div>
+                 <br>
+
     <section id="servicos">
         <h2>Nossos Serviços</h2>
         <ul>
