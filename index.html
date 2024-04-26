@@ -357,6 +357,320 @@
          <p>Os mecanismos de pesquisa usam os títulos para indexar a estrutura e o conteúdo das suas páginas da web.<br>
             Os usuários costumam folhear uma página pelos títulos. É importante usar títulos para mostrar a estrutura do documento.<br>
             Os títulos &lt;h1&gt; devem ser usados ​​para os títulos principais, seguidos pelos títulos &lt;h2&gt;, depois pelos menos importantes &lt;h3&gt; e assim por diante.</p>
+            <hr>
+
+    <!-- CABEÇALHOS HTML-->
+    
+    <h2>● PARÁGRAFOS HTML </h2>
+    <p>Um parágrafo sempre começa em uma nova linha e geralmente é um bloco de texto.<br><br>
+        <h3>PARÁGRAFOS HTML</h3>
+        <p>O elemento HTML &lt;p&gt; define um parágrafo.<br>
+        Um parágrafo sempre começa em uma nova linha e os navegadores adicionam automaticamente algum espaço em branco (uma margem) antes e depois de um parágrafo.</p>
+        <div class="caixa-codigo">
+            <h2>Exemplo Código HTML:</h2>
+            <pre class="codigo-html">
+                &lt;p&gt;Esse é um parágrafo.&lt;/p&gt;
+                &lt;p&gt;Esse é outro parágrafo.&lt;/p&gt;
+           </pre>
+         </div>
+         <div class="caixa-exemplo">
+             <h2>Exemplo:</h2>
+             <p>Esse é um parágrafo.</p>
+             <p>Esse é outro parágrafo</p>
+         </div>
+         <br>
+
+         <h3>EXIBIÇÃO HTML</h3>
+         <p>Exibição HTML
+            Você não pode ter certeza de como o HTML será exibido.<br>
+            Telas grandes ou pequenas e janelas redimensionadas criarão resultados diferentes.<br>
+            Com HTML, você não pode alterar a exibição adicionando espaços ou linhas extras em seu código HTML.<br>
+            O navegador removerá automaticamente quaisquer espaços e linhas extras quando a página for exibida:</p>
+         <div class="caixa-codigo">
+             <h2>Exemplo Código HTML:</h2>
+             <pre class="codigo-html">
+                 &lt;p&gt;
+                 Este parágrafo
+                 contém muitas linhas
+                 no código-fonte,
+                 mas o navegador
+                 ignora isso.&lt;/p&gt;<br>
+                 &lt;p&gt;
+                 Este    parágrafo
+                 contém muitos  espaços
+                 no    código-fonte,
+                 mas   o navegador
+                 ignora    isso.&lt;/p&gt;
+            </pre>
+          </div>
+          <div class="caixa-exemplo">
+              <h2>Exemplo:</h2>
+              <p> Este parágrafo
+                contém muitas linhas
+                no código-fonte,
+                mas o navegador
+                ignora isso.</p><br>
+              <p>Este    parágrafo
+                contém muitos  espaços
+                no    código-fonte,
+                mas   o navegador
+                ignora    isso.</p>
+          </div>
+          <br>
+
+          <h3>REGRAS HORIZONTAIS HTML</h3>
+        <p>A tag  &lt;hr&gt;define uma quebra temática em uma página HTML e geralmente é exibida como uma regra horizontal.<br>
+        O elemento &lt;hr&gt; é usado para separar o conteúdo (ou definir uma alteração) em uma página HTML:</p>
+        <div class="caixa-codigo">
+            <h2>Exemplo Código HTML:</h2>
+            <pre class="codigo-html">
+                &lt;h1&gt;TÍTULO 1&lt;/h1&gt;
+                &lt;p&gt;Algum texto vem aqui.&lt;/p&gt;
+                &lt;hr&gt;
+                &lt;h2&gt;TÍTULO 2&lt;/h2&gt;
+                &lt;p&gt;Outro texto aqui.&lt;/p&gt;
+                &lt;hr&gt;
+           </pre>
+         </div>
+         <div class="caixa-exemplo">
+             <h2>Exemplo:</h2>
+             <h1>TÍTULO 1</h1>
+             <p>Algum texto vem aqui.</p>
+             <hr>
+             <h2>TÍTULO 2</h2>
+             <p>Outro texto aqui.</p>
+             <hr>
+         </div>
+         <br>
+
+         <h3>QUEBRAS DE LINHA HTML</h3>
+         <p>O elemento HTML &lt;br&gt; define uma quebra de linha.<br>
+            Use &lt;br&gt; se desejar uma quebra de linha (uma nova linha) sem iniciar um novo parágrafo.<br>
+            A tag &lt;br&gt; é uma tag vazia, o que significa que não possui tag final.</p>
+        <div class="caixa-codigo">
+            <h2>Exemplo Código HTML:</h2>
+            <pre class="codigo-html">
+                &lt;p&gt;Esse é &lt;br&gt; um parágrafo &lt;br&gt; com quebra de linhas.&lt;/p&gt;
+           </pre>
+         </div>
+         <div class="caixa-exemplo">
+            <h2>Exemplo:</h2>
+            <p>Esse é<br>um parágrafo<br>com quebra de linhas.</p>
+         </div>
+         <br>
+
+         <h3>O PROBLEMA DO POEMA</h3>
+         <p>Este poema será exibido em uma única linha:</p>
+        <div class="caixa-codigo">
+            <h2>Exemplo Código HTML:</h2>
+            <pre class="codigo-html">
+                &lt;p&gt;
+              
+                Ah, quem me dera ser poeta
+
+                Pra cantar em seu louvor
+
+                Belas canções, lindos poemas
+
+                Doces frases de amor
+                &lt;/p&gt;
+           </pre>
+         </div>
+         <div class="caixa-exemplo">
+            <h2>Exemplo:</h2>
+            <p> Ah, quem me dera ser poeta
+
+                Pra cantar em seu louvor
+
+                Belas canções, lindos poemas
+
+                Doces frases de amor
+            </p>
+         </div>
+         <br>
+
+         <h3>A SOLUÇÃO - O ELEMENTO HTML &lt;pre&gt;</h3>
+         <p>O elemento HTML &lt;pre&gt; define texto pré-formatado.<br>
+         O texto dentro de um elemento &lt;pre&gt; é exibido em uma fonte de largura fixa (geralmente Courier) e preserva espaços e quebras de linha:</p>
+        <div class="caixa-codigo">
+            <h2>Exemplo Código HTML:</h2>
+            <pre class="codigo-html">
+                &lt;pre&gt;
+              
+                Ah, quem me dera ser poeta
+
+                Pra cantar em seu louvor
+
+                Belas canções, lindos poemas
+
+                Doces frases de amor
+                &lt;/pre&gt;
+           </pre>
+         </div>
+         <div class="caixa-exemplo">
+            <h2>Exemplo:</h2>
+            <pre>   
+                    Ah, quem me dera ser poeta
+
+                    Pra cantar em seu louvor
+
+                    Belas canções, lindos poemas
+
+                    Doces frases de amor
+            </pre>
+         </div>
+         <br>
+         <hr>
+         <br>
+
+         <!-- HTML STYLE-->
+    
+    <h2>● HTML STYLE </h2>
+    <p>O atributo HTML style é usado para adicionar estilos a um elemento, como cor, fonte, tamanho e muito mais.<br><br>
+        <div class="caixa-codigo">
+            <h2>Exemplo Código HTML:</h2>
+            <pre class="codigo-html">
+                &lt;p&gt;Eu sou normal&lt;/p&gt;
+                &lt;p style="color:red;"&lt;Eu sou vermelho&lt;/p&gt;
+                &lt;p style="color:blue;"&lt;Eu sou azul&lt;/p&gt;
+                &lt;p style="font-size:50px;"&lt;Eu sou grande&lt;/p&gt;
+
+           </pre>
+         </div>
+         <div class="caixa-exemplo">
+            <h2>Exemplo:</h2>
+            <p>Eu sou normal</p>
+            <p style="color:red;">Eu sou vermelho</p>
+            <p style="color:blue;">Eu sou azul</p>
+            <p style="font-size:50px;">Eu sou grande</p>
+            
+         </div>
+         <br>
+         <h3>O ATRIBUTO HTML STYLE </h3>
+         <p>Definir o estilo de um elemento HTML pode ser feito com o atributo style.<br>
+            O atributo HTML stylepossui a seguinte sintaxe:</p>
+            <div class="caixa-codigo">
+                <h2>Exemplo Código HTML:</h2>
+                <pre class="codigo-html">
+                    &lt;tagname style="proptiedade:valor;"&gt;
+                </pre>
+            </div>
+            <br>
+            <h3>COR DE FUNDO</h3>
+         <p>A propriedade CSS "background-color" define a cor de fundo de um elemento HTML.<br>
+            O atributo HTML stylepossui a seguinte sintaxe:</p>
+            <p>➢ Defina a cor de fundo de uma página como branco:</p>
+            <div class="caixa-codigo">
+                <h2>Exemplo Código HTML:</h2>
+                <pre class="codigo-html">
+                    &lt;body style="background-color:white;"&gt;
+
+                    &lt;h1&gt;Esse é um título.&lt;/h1&gt;
+                    &lt;p&gt;Esse é um parágrafo.&lt;/p&gt;
+                        
+                    &lt;/body&gt;
+                </pre>
+            </div>
+            <div class="caixa-exemplo">
+            <h2>Exemplo:</h2>
+            <body style="background-color:white;">
+
+                <h1>Esse é um título.</h1>
+                <p>Esse é um parágrafo</p>
+                
+                </body>
+            </div>    
+             <br>
+             <p>➢ Defina a cor de fundo para dois elementos diferentes:</p>
+             <div class="caixa-codigo">
+                <h2>Exemplo Código HTML:</h2>
+                <pre class="codigo-html">
+                    &lt;body&gt;
+
+                    &lt;h1 style="background-color:powderblue;"&gt;Esse é um título.&lt;/h1&gt;
+                    &lt;p style="background-color:tomato;"&gt;Esse é um parágrafo.&lt;/p&gt;
+                        
+                    &lt;/body&gt;
+                </pre>
+            </div>
+            <div class="caixa-exemplo">
+            <h2>Exemplo:</h2>
+            <body>
+
+                <h1 style="background-color:powderblue;">Esse é um título</h1>
+                <p style="background-color:tomato;">Esse é um parágrafo.</p>
+                
+            </body>
+            </div>    
+             <br>
+            <br>
+
+            <h3>COR DO TEXTO</h3>
+            <p>A propriedade CSS "color" define a cor do texto para um elemento HTML:</p>
+            <div class="caixa-codigo">
+                <h2>Exemplo Código HTML:</h2>
+                <pre class="codigo-html">
+                    &lt;h1 style="color:blue;"&gt;Esse é um título&lt;/h1&gt;
+                    &lt;p style="color:red;"&gt;Esse é um parágrafo.&lt;/p&gt;
+               </pre>
+             </div>
+             <div class="caixa-exemplo">
+                 <h2>Exemplo:</h2>
+                 <h1 style="color:blue;">Esse é um título</h1>
+                 <p style="color:red;">Esse é um parágrafo.</p>
+             </div>
+             <br>
+
+             <h3>FONTES</h3>
+            <p>A propriedade CSS "font-family" define a fonte a ser usada para um elemento HTML:</p>
+            <div class="caixa-codigo">
+                <h2>Exemplo Código HTML:</h2>
+                <pre class="codigo-html">
+                    &lt;h1 style="font-family:verdana;"&gt;Esse é um título&lt;/h1&gt;
+                    &lt;p style="font-family:courier;"&gt;Esse é um parágrafo.&lt;/p&gt;
+               </pre>
+             </div>
+             <div class="caixa-exemplo">
+                 <h2>Exemplo:</h2>
+                 <h1 style="font-family:verdana;">Esse é um título</h1>
+                 <p style="font-family:courier;">Esse é um parágrafo.</p>
+             </div>
+             <br>
+
+             <h3>TAMANHO DO TEXTO</h3>
+            <p>A propriedade CSS "font-size" define o tamanho do texto para um elemento HTML:</p>
+            <div class="caixa-codigo">
+                <h2>Exemplo Código HTML:</h2>
+                <pre class="codigo-html">
+                    &lt;h1 style="font-size:300%;"&gt;Esse é um título&lt;/h1&gt;
+                    &lt;p style="font-size:160%;"&gt;Esse é um parágrafo.&lt;/p&gt;
+               </pre>
+             </div>
+             <div class="caixa-exemplo">
+                 <h2>Exemplo:</h2>
+                 <h1 style="font-size:300%;">Esse é um título</h1>
+                 <p style="font-size:160%;">Esse é um parágrafo.</p>
+             </div>
+             <br>
+
+             <h3>ALINHAMENTO DO TEXTO</h3>
+            <p>A propriedade CSS "text-align"" define o alinhamento horizontal do texto para um elemento HTML:</p>
+            <div class="caixa-codigo">
+                <h2>Exemplo Código HTML:</h2>
+                <pre class="codigo-html">
+                    &lt;h1 style="text-align:center;"&gt;Esse é um título&lt;/h1&gt;
+                    &lt;p style="text-align:center;"&gt;Esse é um parágrafo.&lt;/p&gt;
+               </pre>
+             </div>
+             <div class="caixa-exemplo">
+                 <h2>Exemplo:</h2>
+                 <h1 style="text-align:center;">Esse é um título</h1>
+                 <p style="text-align:center;">Esse é um parágrafo.</p>
+             </div>
+             <br>
+             <br>
+             <hr>
+             
 
     <section id="servicos">
         <h2>Nossos Serviços</h2>
