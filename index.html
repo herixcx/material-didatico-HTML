@@ -857,7 +857,313 @@
          <br>
          <br>
          <hr>
+         <br>
 
+          <!-- COTAÇÃO HTML E ELEMENTOS DE CITAÇÃO -->
+    
+    <h2>● COTAÇÃO HTML E ELEMENTOS DE CITAÇÃO </h2>
+    <p>Aqui examinaremos os elementos HTML &lt;blockquote&gt;, &lt;q&gt;, &lt;abbr&gt;, &lt;address&gt;, &lt;cite&gt; e &lt;bdo&gt;.<br><br>
+        <div class="caixa-codigo">
+            <h2>Exemplo Código HTML:</h2>
+            <pre class="codigo-html">
+                &lt;p&gt;Aqui está uma citação do site do WWF:&lt;/p&gt;
+                &lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt;
+                    Durante 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar. Como principal organização de conservação do mundo, o WWF trabalha em quase 100 países. Em todos os níveis, colaboramos com pessoas de todo o mundo para desenvolver e fornecer soluções inovadoras que protejam as comunidades, a vida selvagem e os locais onde vivem.
+                    &lt;/blockquote&gt;
+           </pre>
+         </div>
+         <div class="caixa-exemplo">
+            <h2>Exemplo:</h2>
+            <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                Durante 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar. Como principal organização de conservação do mundo, o WWF trabalha em quase 100 países. Em todos os níveis, colaboramos com pessoas de todo o mundo para desenvolver e fornecer soluções inovadoras que protejam as comunidades, a vida selvagem e os locais onde vivem.
+            </blockquote>
+         </div>
+         <br>
+         <br>
+         <h3>TAG HTML &lt;q&gt; PARA CITAÇÕES CURTAS</h3>
+         <p>A tag HTML &lt;q&gt; define uma citação curta.<br>
+            Os navegadores normalmente inserem aspas ao redor da citação.</p>
+         <div class="caixa-codigo">
+            <h2>Exemplo Código HTML:</h2>
+            <pre class="codigo-html">
+                &lt;p&gt;O objetivo da WWF é: &lt;q&gt; Construir um futuro onde as pessoas vivam em harmonia com a natureza.&lt;/q&gt;&lt;/p&gt;
+            </pre>
+
+         </div>
+         <div class="caixa-exemplo">
+            <h2>Exemplo:</h2>
+            <p>O objetivo da WWF é: <q>Construir um futuro onde as pessoas vivam em harmonia com a natureza.</q></p>
+         </div>
+         <br>
+         <br>
+         <h3>TAG HTML &lt;abbr&gt; PARA ABREVIAÇÕES</h3>
+         <p>A tag HTML &lt;abbr&gt; define uma abreviatura ou um acrônimo, como "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".<br>
+            A marcação de abreviaturas pode fornecer informações úteis aos navegadores, sistemas de tradução e motores de busca.</p>
+         <div class="caixa-codigo">
+            <h2>Exemplo Código HTML:</h2>
+            <pre class="codigo-html">
+                &lt;p&gt;A &lt;abbr title="Organização Mundial da Saúde"&gt; OMS &lt;/abbr&gt; foi fundada em 1948.&lt;/p&gt;
+            </pre>
+
+         </div>
+         <div class="caixa-exemplo">
+            <h2>Exemplo:</h2>
+            <p>A <abbr title="Organização Mundial da Saúde"> OMS </abbr> foi fundada em 1948.</p>
+         </div>
+         <br>
+         <br>
+         <h3>TAG HTML &lt;address&gt; PARA INFORMAÇÕES DE CONTATO</h3>
+         <p>A tag HTML &lt;address&gt; define as informações de contato do autor/proprietário de um documento ou artigo.<br><br>
+            As informações de contato podem ser endereço de e-mail, URL, endereço físico, número de telefone, identificador de mídia social, etc.<br>
+            O texto na tag &lt;address&gt; geralmente é renderizado em <i>itálico</i> e os navegadores sempre adicionam uma quebra de linha antes e depois da tag &lt;address&gt;.</p>
+         <div class="caixa-codigo">
+            <h2>Exemplo Código HTML:</h2>
+            <pre class="codigo-html">
+                &lt;address&gt;
+                    Escirto por Monteiro Lobato. &lt;br&gt;
+                    Nos visite em: &lt;br&gt;
+                    sitio-do-pica-pau-amarelo.com.br &lt;br&gt;
+                    Caixa Postal 256, Estúdios Globo &lt;br&gt;
+                    BR
+                    &lt;/address&gt;
+            </pre>
+
+         </div>
+         <div class="caixa-exemplo">
+            <h2>Exemplo:</h2>
+            <address>
+                Escirto por Monteiro Lobato.<br>
+                Nos visite em:<br>
+                sitio-do-pica-pau-amarelo.com.br<br>
+                Caixa Postal 256, Estúdios Globo<br>
+                BR
+                </address>
+         </div>
+         <br>
+         <br>
+         <h3>TAG HTML &lt;cite&gt; PARA TÍTULO DO TRABALHO</h3>
+         <p>A tag HTML &lt;cite&gt; o título de um trabalho criativo (por exemplo, um livro, um poema, uma música, um filme, uma pintura, uma escultura, etc.).<br>
+            <i>Nota:</i> O nome de uma pessoa não é o título de uma obra.<br>
+             O texto na tag HTML &lt;cite&gt; geralmente é renderizado em <i>itálico</i>.</p>
+         <div class="caixa-codigo">
+            <h2>Exemplo Código HTML:</h2>
+            <pre class="codigo-html">
+                &lt;p&lt;&lt;cite&gt;O Grito&lt;/cite&gt; por Edvard Munch. Pintado em 1893.&lt;/p&lt;
+            </pre>
+
+         </div>
+         <div class="caixa-exemplo">
+            <h2>Exemplo:</h2>
+            <p><cite>O Grito</cite> por Edvard Munch. Pintado em 1893.</p>
+         </div>
+         <br>
+         <br>
+         <h3>TAG HTML &lt;bdo&gt; PARA SUBSTITUIÇÃO BIDIRECIONAL</h3>
+         <p>BDO significa Bi-Directional Override (Substituição Bidirecional).<br>
+            A tag HTML &lt;bdo&gt; é usada para substituir a direção atual do texto:</p>
+         <div class="caixa-codigo">
+            <h2>Exemplo Código HTML:</h2>
+            <pre class="codigo-html">
+                &lt;bdo dir="rtl"&gt;Este texto vai ser escrito da direita para à esquerda.&lt;/bdo&gt;
+            </pre>
+
+         </div>
+         <div class="caixa-exemplo">
+            <h2>Exemplo:</h2>
+            <bdo dir="rtl">Este texto vai ser escrito da direita para à esquerda.</bdo>
+         </div>
+         <br>
+         <br>
+         <hr>
+         <br>
+         <br>
+         <!-- COMENTÁRIOS HTML -->
+    
+        <h2>● COMENTÁRIOS HTML </h2>
+        <p>Os comentários HTML não são exibidos no navegador, mas podem ajudar a documentar seu código-fonte HTML.</p><br>
+        <br>
+        <h3>ETIQUETA DE COMENTÁRIO HTML</h3>
+        <p>Você pode adicionar comentários à sua fonte HTML usando a seguinte sintaxe:</p>
+        <div class="caixa-codigo">
+           <h2>Exemplo Código HTML:</h2>
+           <pre class="codigo-html">
+            &lt;!-- ESCREVA SEUS COMENTÁRIOS AQUI --&gt;
+           </pre>
+        </div>
+        <p>Observe que há um ponto de exclamação (!) na tag inicial, mas não na tag final. Os comentários não são exibidos pelo navegador, mas podem ajudar a documentar seu código-fonte HTML.</p><br>
+        <br>
+        <h3>ADICIONE COMENTÁRIOS</h3>
+        <p>Com comentários você pode colocar notificações e lembretes em seu código HTML:</p>
+        <div class="caixa-codigo">
+           <h2>Exemplo Código HTML:</h2>
+           <pre class="codigo-html">
+            &lt;!-- COMENTÁRIO AQUI --&gt;
+
+            &lt;p&gt;Esse é um parágrafo.&lt;/p&gt;
+
+            &lt;!-- LEMBRAR DE ADICIONAR MAIS INFORMAÇÕES AQUI --&gt;
+           </pre>
+        </div>
+        <br>
+        <br>
+        <h3>OCULTAR CONTEÚDOS</h3>
+        <p>Os comentários podem ser usados ​​para ocultar conteúdo.<br>
+            Isso pode ser útil se você ocultar o conteúdo temporariamente:</p>
+        <div class="caixa-codigo">
+           <h2>Exemplo Código HTML:</h2>
+           <pre class="codigo-html">
+            &lt;p&gt;PARÁGRAFO UM.&lt;/p&gt;
+
+            &lt;!-- &lt;p&gt; PARÁGRAFO DOIS (OCULTO) &lt;/p&gt; --&gt;
+
+            &lt;p&gt;PARÁGRAFO TRÊS.&lt;/p&gt;
+           </pre>
+        </div>
+        <div class="caixa-exemplo">
+            <h2>Exemplo:</h2>
+            <p>PARÁGRAFO UM.</p>
+
+            <!-- <p> PARÁGRAFO DOIS (OCULTO) </p> -->
+
+            <p>PARÁGRAFO TRÊS.</p>
+         </div>
+         <br>
+         <p>Você também pode ocultar mais de uma linha. Tudo entre o &lt;!-- e o --&gt; ficará oculto na tela.</p>
+         <br>
+         <div class="caixa-codigo">
+            <h2>Exemplo Código HTML:</h2>
+            <pre class="codigo-html">
+                &lt;p&gt;PARÁGRAFO UM.&lt;/p&gt;
+                &lt;!-- &lt;p&gt;Veja essa imagem:&lt;/p&gt;
+                &lt;img border="0" src="pic_trulli.jpg" alt="Trulli"&gt; --&gt;
+                &lt;p&gt;PARÁGRAFO DOIS.&lt;/p&gt;
+            </pre>
+         </div>
+         <br>
+         <br>
+         <hr>
+         <br>
+         <br>
+         <!-- CORES HTML -->
+    
+        <h2>● CORES HTML </h2>
+        <p>As cores HTML são especificadas com nomes de cores predefinidos ou com valores RGB, HEX, HSL, RGBA ou HSLA.</p><br>
+        <h3>NOMES DAS CORES</h3>
+        <p>Em HTML, uma cor pode ser especificada usando um nome de cor. HTML suporta 140 nomes de cores padrão.</p>
+        <div class="caixa-codigo">
+           <h2>Exemplo Código HTML:</h2>
+           <pre class="codigo-html">
+            &lt;h1 style="background-color:Tomato;"&gt;Tomato&lt;/h1&gt;
+            &lt;h1 style="background-color:Orange;"&gt;Orange&lt;/h1&gt;
+            &lt;h1 style="background-color:DodgerBlue;"&gt;DodgerBlue&lt;/h1&gt;
+            &lt;h1 style="background-color:MediumSeaGreen;"&gt;MediumSeaGreen&lt;/h1&gt;
+            &lt;h1 style="background-color:Gray;"&gt;Gray&lt;/h1&gt;
+            &lt;h1 style="background-color:SlateBlue;"&gt;SlateBlue&lt;/h1&gt;
+            &lt;h1 style="background-color:Violet;"&gt;Violet&lt;/h1&gt;
+            &lt;h1 style="background-color:LightGray;"&gt;LightGray&lt;/h1&gt;
+           </pre>
+        </div>
+        <div class="caixa-exemplo">
+            <h2>Exemplo:</h2>
+            <h1 style="background-color:Tomato;">Tomato</h1>
+            <h1 style="background-color:Orange;">Orange</h1>
+            <h1 style="background-color:DodgerBlue;">DodgerBlue</h1>
+            <h1 style="background-color:MediumSeaGreen;">MediumSeaGreen</h1>
+            <h1 style="background-color:Gray;">Gray</h1>
+            <h1 style="background-color:SlateBlue;">SlateBlue</h1>
+            <h1 style="background-color:Violet;">Violet</h1>
+            <h1 style="background-color:LightGray;">LightGray</h1>
+         </div>
+         <br>
+         <h3>COR DE FUNDO</h3>
+         <p>Você pode definir a cor de fundo dos elementos HTML:</p>
+         <div class="caixa-codigo">
+            <h2>Exemplo Código HTML:</h2>
+            <pre class="codigo-html">
+                &lt;h1 style="background-color:DodgerBlue;"&gt;Oi Mundo&lt;/h1&gt;
+                &lt;p style="background-color:Tomato;"&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea comodo consequat.&lt;/p&gt;
+            </pre>
+
+         </div>
+         <div class="caixa-exemplo">
+            <h2>Exemplo:</h2>
+            <h1 style="background-color:DodgerBlue;">Oi Mundo</h1>
+            <p style="background-color:Tomato;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea comodo consequat.</p>
+         </div>
+         <br>
+         <br>
+         <h3>COR DO TEXTO</h3>
+         <p>Você pode definir a cor do texto:</p>
+         <div class="caixa-codigo">
+            <h2>Exemplo Código HTML:</h2>
+            <pre class="codigo-html">
+                &lt;h1 style="color:Tomato;"&gt;Oi Mundo &lt;/h1&gt;
+                &lt;p style="color:DodgerBlue;"&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. &lt;/p&gt;
+                &lt;p style="color:MediumSeaGreen;"&gt;Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea comodo consequat. &lt;/p&gt;
+            </pre>
+
+         </div>
+         <div class="caixa-exemplo">
+            <h2>Exemplo:</h2>
+            <h1 style="color:Tomato;">Oi Mundo</h1>
+            <p style="color:DodgerBlue;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p style="color:MediumSeaGreen;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea comodo consequat.</p>
+         </div>
+         <br>
+         <br>
+         <h3>COR DA BORDA</h3>
+         <p>Você pode definir a cor das bordas:</p>
+         <div class="caixa-codigo">
+            <h2>Exemplo Código HTML:</h2>
+            <pre class="codigo-html">
+                &lt;h1 style="border:2px solid Tomato;"&gt;Oi mundo&lt;/h1&gt;
+                &lt;h1 style="border:2px solid DodgerBlue;"&gt;Oi mundo&lt;/h1&gt;
+                &lt;h1 style="border:2px solid Violet;"&gt;Oi mundo&lt;/h1&gt;
+            </pre>
+
+         </div>
+         <div class="caixa-exemplo">
+            <h2>Exemplo:</h2>
+            <h1 style="border:2px solid Tomato;">Oi mundo</h1>
+            <h1 style="border:2px solid DodgerBlue;">Oi mundo</h1>
+            <h1 style="border:2px solid Violet;">Oi mundo</h1>
+        </div>
+         <br>
+         <br>
+         <h3>VALORES DE CORES</h3>
+         <p>Em HTML, as cores também podem ser especificadas usando valores RGB, valores HEX, valores HSL, valores RGBA e valores HSLA.
+         Os três elementos &lt;div&gt; a seguir têm sua cor de fundo definida com valores RGB, HEX e HSL:</p>
+         <div class="caixa-codigo">
+            <h2>Exemplo Código HTML:</h2>
+            <pre class="codigo-html">
+                &lt;h1 style="background-color:rgb(255, 99, 71);"&gt;RGB (255, 99, 71)&lt;/h1&gt;
+                &lt;h1 style="background-color:#ff6347;"&gt;#ff6347&lt;/h1&gt;
+                &lt;h1 style="background-color:hsl(9, 100%, 64%);"&gt;hsl (9, 100%, 64%)&lt;/h1&gt;
+            </pre>
+
+         </div>
+         <div class="caixa-exemplo">
+            <h2>Exemplo:</h2>
+            <h1 style="background-color:rgb(255, 99, 71);">RGB (255, 99, 71)</h1>
+                <h1 style="background-color:#ff6347;">#ff6347</h1>
+                <h1 style="background-color:hsl(9, 100%, 64%);">hsl (9, 100%, 64%)</h1>
+        </div>
+         <br>
+         <p>Os dois elementos &lt;div&gt; a seguir têm sua cor de fundo definida com valores RGBA e HSLA, que adicionam um canal Alpha à cor (aqui temos 50% de transparência):</p>
+         <div class="caixa-codigo">
+            <h2>Exemplo Código HTML:</h2>
+            <pre class="codigo-html">
+                &lt;h1 style="background-color:rgba(255, 99, 71, 0.5);"&gt;rgb (255, 99, 71, 0,5)&lt;/h1&gt;
+                &lt;h1 style="background-color:hsla(9, 100%, 64%, 0.5);"&gt;hsla (9, 100%, 64%, 0,5)&lt;/h1&gt;
+            </pre>
+
+         </div>
+         <div class="caixa-exemplo">
+            <h2>Exemplo:</h2>
+            <h1 style="background-color:rgba(255, 99, 71, 0.5);">rgb (255, 99, 71, 0,5)</h1>
+            <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla (9, 100%, 64%, 0,5)</h1>
+        </div>
+         <br>
 
     <section id="servicos">
         <h2>Nossos Serviços</h2>
