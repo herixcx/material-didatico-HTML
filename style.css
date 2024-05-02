@@ -136,3 +136,12 @@ table {
   tr:nth-child(even) {
     background-color: #b4cef5;
   }
+
+  div.mycontainer {
+    width:100%;
+    overflow:auto;
+  }
+  div.mycontainer div {
+    width:33%;  
+    float:left;
+  }
