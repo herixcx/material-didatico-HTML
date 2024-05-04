@@ -344,7 +344,7 @@
 
     <!-- CABEÇALHOS HTML-->
     
-    <h2>● CABEÇALHOS HTML </h2>
+    <h2> CABEÇALHOS HTML </h2>
     <p>Os títulos HTML são títulos ou legendas que você deseja exibir em uma página da web.<br>
         São definidos com as tags &lt;h1&gt; à &lt;h6&gt;.<br>
          &lt;h1&gt; define o título mais importante. &lt;h6&gt; define o título menos importante.</p>
@@ -379,7 +379,7 @@
 
     <!-- PARÁGRAFOS HTML-->
     
-    <h2>● PARÁGRAFOS HTML </h2>
+    <h2> PARÁGRAFOS HTML </h2>
     <p>Um parágrafo sempre começa em uma nova linha e geralmente é um bloco de texto.<br><br>
         <h3>PARÁGRAFOS HTML</h3>
         <br>
@@ -549,7 +549,7 @@
 
          <!-- HTML STYLE-->
     
-    <h2>● HTML STYLE </h2>
+    <h2> HTML STYLE </h2>
     <p>O atributo HTML style é usado para adicionar estilos a um elemento, como cor, fonte, tamanho e muito mais.<br><br>
         <div class="caixa-codigo">
             <h2>Exemplo Código HTML:</h2>
@@ -704,7 +704,7 @@
 
              <!-- FORMATAÇÃO DE TEXTO HTML-->
     
-    <h2>● FORMATAÇÃO DE TEXTO HTML </h2>
+    <h2> FORMATAÇÃO DE TEXTO HTML </h2>
     <p>HTML contém vários elementos para definir texto com um significado especial.<br><br>
         <div class="caixa-codigo">
             <h2>Exemplo Código HTML:</h2>
@@ -899,7 +899,7 @@
 
           <!-- COTAÇÃO HTML E ELEMENTOS DE CITAÇÃO -->
     
-    <h2>● COTAÇÃO HTML E ELEMENTOS DE CITAÇÃO </h2>
+    <h2> COTAÇÃO HTML E ELEMENTOS DE CITAÇÃO </h2>
     <p>Aqui examinaremos os elementos HTML &lt;blockquote&gt;, &lt;q&gt;, &lt;abbr&gt;, &lt;address&gt;, &lt;cite&gt; e &lt;bdo&gt;.<br><br>
         <div class="caixa-codigo">
             <h2>Exemplo Código HTML:</h2>
@@ -1022,7 +1022,7 @@
          <br>
          <!-- COMENTÁRIOS HTML -->
     
-        <h2>● COMENTÁRIOS HTML </h2>
+        <h2> COMENTÁRIOS HTML </h2>
         <p>Os comentários HTML não são exibidos no navegador, mas podem ajudar a documentar seu código-fonte HTML.</p><br>
         <br>
         <h3>ETIQUETA DE COMENTÁRIO HTML</h3>
@@ -1091,7 +1091,7 @@
          <br>
          <!-- CORES HTML -->
     
-        <h2>● CORES HTML </h2>
+        <h2> CORES HTML </h2>
         <p>As cores HTML são especificadas com nomes de cores predefinidos ou com valores RGB, HEX, HSL, RGBA ou HSLA.</p><br>
         <h3>NOMES DAS CORES</h3>
         <br>
@@ -2129,6 +2129,551 @@
                           
                           </div>
                     </div>
+                    <h3>BLOCO EMBUTIDO</h3>
+                    <p>Se você alterar a propriedade do elemento &lt;div&gt; de para , os elementos não adicionarão mais uma quebra de linha antes e depois e serão exibidos lado a lado em vez de um em cima do outro.displayblockinline-block &lt;div&gt;</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;div class="mycontainer"&gt;
+
+                                &lt;div style="background-color:#FFF4A3;"&gt;
+                                    &lt;h2&gt;Londres&lt;/h2&gt;
+                                    &lt;p&gt;Londres é a capital da Inglaterra.&lt;/p&gt;
+                                    &lt;p&gt;Londres tem mais de 13 milhões de habitantes.&lt;/p&gt;
+                                &lt;/div&gt;
+                                
+                                &lt;div style="background-color:#FFC0C7;"&gt;
+                                    &lt;h2&gt;Oslo&lt;/h2&gt;
+                                    &lt;p&gt;Oslo é a capital da Noruega.&lt;/p&gt;
+                                    &lt;p&gt;Oslo tem mais 600.000 habitantes.&lt;/p&gt;
+                                &lt;/div&gt;
+                                
+                                &lt;div style="background-color:#D9EEE1;"&gt;
+                                    &lt;h2&gt;Roma&lt;/h2&gt;
+                                    &lt;p&gt;Roma é a capital da Itália.&lt;/p&gt;
+                                    &lt;p&gt;Roma tem quase 3 milhões de habitantes.&lt;/p&gt;
+                                &lt;/div&gt;
+                              
+                             &lt;/div&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                        <div class="mycontainer">
+
+                            <div style="background-color:#FFF4A3;">
+                              <h2>Londres</h2>
+                              <p>Londres é a capital da Inglaterra.</p>
+                              <p>Londres tem mais de 13 milhões de habitantes.</p>
+                            </div>
+                            
+                            <div style="background-color:#FFC0C7;">
+                              <h2>Oslo</h2>
+                              <p>Oslo é a capital da Noruega.</p>
+                              <p>Oslo tem mais 600.000 habitantes.</p>
+                            </div>
+                            
+                            <div style="background-color:#D9EEE1;">
+                              <h2>Roma</h2>
+                              <p>Roma é a capital da Itália.</p>
+                              <p>Roma tem quase 3 milhões de habitantes.</p>
+                            </div>
+                          
+                          </div>
+                    </div>
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+
+                    <!-- HTML CLASSES  -->
+
+                    <h2> HTML CLASSES  </h2>
+                    <p> HTML Classes são atributos utilizados para identificar e agrupar elementos HTML que possuem características semelhantes. Eles são usados principalmente para aplicar estilos CSS ou comportamentos JavaScript a esses elementos.</p>
+                    <br>
+                    <h3>USANDO O ATRIBUTO CLASS</h3>
+                    <p>O atributo <i>class</i> é frequentemente usado para apontar para um nome de classe em uma folha de estilo. Também pode ser usado por JavaScript para acessar e manipular elementos com o nome de classe específico.</p>
+                    <p>No exemplo a seguir temos três elementos &lt;div&gt; com um atributo <i>class</i> com o valor “cidade”. Todos os três elementos &lt;div&gt; serão estilizados igualmente de acordo com a .city definição de estilo na seção principal:</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;div class="city"&gt;
+                                &lt;h2&gt;Londres&lt;/h2&gt;
+                                &lt;p&gt;Londres é a capital da Inglaterra.&lt;/p&gt;
+                            &lt;/div&gt;
+                              
+                            &lt;div class="city"&gt;
+                                &lt;h2&gt;Paris&lt;/h2&gt;
+                                &lt;p&gt;Paris é a capital da França.&lt;/p&gt;
+                            &lt;/div&gt;
+                              
+                            &lt;div class="city"&gt;
+                                &lt;h2&gt;Tokio&lt;/h2&gt;
+                                &lt;p&gt;Tokio é a capital do Japão.&lt;/p&gt;
+                            &lt;/div&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                        <div class="city">
+                            <h2>Londres</h2>
+                            <p>Londres é a capital da Inglaterra.</p>
+                          </div>
+                          
+                          <div class="city">
+                            <h2>Paris</h2>
+                            <p>Paris é a capital da França.</p>
+                          </div>
+                          
+                          <div class="city">
+                            <h2>Tokio</h2>
+                            <p>Tokio é a capital do Japão.</p>
+                          </div>
+                    </div>
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+
+                    <!-- HTML ID  -->
+
+                    <h2> HTML ID  </h2>
+                    <p> O atributo HTML <i>id</i>  é usado para especificar um ID exclusivo para um elemento HTML.<br>
+                        Você não pode ter mais de um elemento com o mesmo id em um documento HTML.</p>
+                    <br>
+                    <h3>USANDO O ATRIBUTO ID</h3>
+                    <br>
+                    <p>O atributo <i>id</i>  especifica um ID exclusivo para um elemento HTML. O valor do id atributo deve ser exclusivo no documento HTML.</p>
+
+                    <p>O atributo <i>id</i>  é usado para apontar para uma declaração de estilo específica em uma folha de estilos. Também é usado por JavaScript para acessar e manipular o elemento com o id específico.</p>
+                        
+                    <p>A sintaxe para id é: escreva um caractere hash (#), seguido por um nome de id. Em seguida, defina as propriedades CSS entre chaves {}.</p>
+                        
+                    <p>No exemplo a seguir temos um elemento &lt;h1&gt; que aponta para o nome do id “myHeader”. Este  elemento &lt;h1&gt; será estilizado de acordo com a #myHeader definição de estilo na seção head:</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                            &lt;head&gt;
+                            &lt;style&gt;
+                            #myHeader {
+                              background-color: lightblue;
+                              color: black;
+                              padding: 40px;
+                              text-align: center;
+                            }
+                            &lt;/style&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                            
+                            &lt;h1 id="myHeader"&gt;My Header&lt;/h1&gt;
+                            
+                            &lt;/body&gt;
+                            &lt;/html&gt;
+                    </div>
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+
+                    <!-- Iframes HTML -->
+
+                    <h2>Iframes HTML </h2>
+                    <p>Um iframe HTML é usado para exibir uma página da web dentro de uma página da web.</p>
+                    <br>
+                    <h3>SINTAXE HTML Iframe</h3>
+                    <br>
+                    <p>A tag HTML &lt;iframe&gt; especifica um quadro embutido.<br>
+                    Um quadro embutido é usado para incorporar outro documento no documento HTML atual.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;iframe src="url" title="description"&gt;&lt;/iframe&gt;
+                    </div>
+                    <br>
+                    <h3>Iframe - ALTURA E LARGURA</h3>
+                    <br>
+                    <p>Use os atributos <i>height</i> e <i>width</i> para especificar o tamanho do iframe.<br>
+                        A altura e a largura são especificadas em pixels por padrão:</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"&gt;&lt;/iframe&gt;
+                    </div>
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+
+                    <!-- HTMLJavaScript -->
+
+                    <h2> HTMLJavaScript </h2>
+                    <p>JavaScript torna as páginas HTML mais dinâmicas e interativas.</p>
+                    <br>
+                    <h3>HTML E JavaScript</h3>
+                    <br>
+                    <p>HTML e JavaScript são linguagens diferentes, mas podem ser integradas para criar interações dinâmicas em páginas da web. Abaixo está um exemplo simples de como integrar JavaScript em um arquivo HTML para criar um botão que exibe uma mensagem quando clicado:</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html lang="pt-br"&gt;
+                            &lt;head&gt;
+                            &lt;meta charset="UTF-8"&gt;
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                            &lt;title&gt;Exemplo de HTML com JavaScript&lt;/title&gt;
+                            &lt;script&gt;
+                                // Função JavaScript para exibir uma mensagem
+                                function exibirMensagem() {
+                                alert("Olá! Você clicou no botão!");
+                                }
+                            &lt;/script&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+
+                            &lt;!-- Botão que chama a função JavaScript quando clicado --&gt;
+                            &lt;button onclick="exibirMensagem()"&gt;Clique aqui&lt;/button&gt;
+
+                            &lt;/body&gt;
+                            &lt;/html&gt;
+                    </div>
+                    <br>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                        <div class="city">
+                            <script>
+                                // Função JavaScript para exibir uma mensagem
+                                function exibirMensagem() {
+                                  alert("Olá! Você clicou no botão!");
+                                }
+                              </script>
+                            </head>
+                            <body>
+                            
+                            <!-- Botão que chama a função JavaScript quando clicado -->
+                            <button onclick="exibirMensagem()">Clique aqui</button>
+                    </div>
+                </div>
+                    <p>Neste exemplo, uma função JavaScript chamada exibirMensagem() é definida dentro de uma tag &lt;script&gt;. Quando o botão é clicado, a função é chamada e uma caixa de diálogo de alerta é exibida com a mensagem "Olá! Você clicou no botão!". A função é ativada pelo evento onclick no botão, que chama a função quando o botão é clicado. Isso demonstra como você pode integrar JavaScript em um arquivo HTML para criar interações dinâmicas na web.</p>
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+
+                    <!-- ELEMENTOS SEMANTICOS HTML -->
+
+                    <h2> ELEMENTOS SEMANTICOS HTML </h2>
+                    <p>Um elemento semântico descreve claramente seu significado tanto para o navegador quanto para o desenvolvedor.<br>
+                    Elementos semânticos = elementos com significado.</p>
+                    <br>
+                    <h3>HTML Semantics</h3>
+                    <br>
+                    <p>HTML Semantics se refere ao uso apropriado de elementos HTML para estruturar e descrever o conteúdo de uma página da web de forma significativa para os navegadores, motores de busca e, principalmente, para os usuários.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;header&gt;
+                                &lt;h1&gt;Meu Site&lt;/h1&gt;
+                                    &lt;nav&gt;
+                                        &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href="#"&gt;Início&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="#"&gt;Sobre&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="#"&gt;Contato&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/nav&gt;
+                                &lt;/header&gt;
+                              
+                            &lt;main&gt;
+                                &lt;section&gt;
+                                &lt;h2&gt;Sobre&lt;/h2&gt;
+                                &lt;p&gt;Esta é a página sobre o meu site.&lt;/p&gt;
+                                &lt;/section&gt;
+                              
+                                &lt;section&gt;
+                                    &lt;h2&gt;Conteúdo Principal&lt;/h2&gt;
+                                    &lt;article&gt;
+                                    &lt;h3&gt;Artigo 1&lt;/h3&gt;
+                                    &lt;p&gt;Este é o primeiro artigo do site.&lt;/p&gt;
+                                    &lt;/article&gt;
+                                  
+                                &lt;article&gt;
+                                    &lt;h3&gt;Artigo 2&lt;/h3&gt;
+                                    &lt;p&gt;Este é o segundo artigo do site.&lt;/p&gt;
+                                &lt;/article&gt;
+                                &lt;/section&gt;
+                                &lt;/main&gt;
+                    </div>
+                    <p>Neste exemplo:<br>
+                        <br>
+                        &lt;header&gt;: Define o cabeçalho do documento, que pode conter o título e a navegação.<br>
+                        &lt;nav&gt;: Define uma seção de navegação.<br>
+                        &lt;main&gt;: Define o conteúdo principal do documento.<br>
+                        &lt;section&gt;: Define seções distintas da página, como "Sobre" e "Conteúdo Principal".<br>
+                        &lt;article&gt;: Define conteúdo independente e autossuficiente, como artigos.<br>
+                        &lt;footer&gt;: Define o rodapé do documento.<br>
+                        Ao usar esses elementos, o código HTML torna-se mais semântico, facilitando a compreensão do conteúdo e a indexação por motores de busca, além de melhorar a acessibilidade para usuários com tecnologias assistivas.</p>
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+
+                    <!-- HTML STYLE GUIDE -->
+
+                    <h2> HTML STYLE GUIDE </h2>
+                    <p>Um guia de estilo em HTML é uma série de diretrizes que definem como o código HTML deve ser formatado e organizado para garantir consistência, legibilidade e manutenção.</p>
+                    <br>
+                    <h3>IDENTAÇÃO</h3>
+                    <br>
+                    <p>➢ Use espaços para indentar o código.<br>
+                       ➢ Use uma indentação de 2 ou 4 espaços (preferencialmente 2 para economizar espaço).</p>
+                       <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;header&gt;
+                                &lt;h1&gt;Meu Site&lt;/h1&gt;
+                                    &lt;nav&gt;
+                                        &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href="#"&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="#"&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/nav&gt;
+                                &lt;/header&gt;
+                              
+                            &lt;main&gt;
+                                &lt;section&gt;
+                                &lt;h2&gt;Subtítulo&lt;/h2&gt;
+                                &lt;p&gt;Este é um parágrafo.&lt;/p&gt;
+                                &lt;/section&gt;
+                    </div> 
+                <br>
+                <h3>USO DE ASPAS</h3> 
+                <br>
+                <p>➢ Use aspas duplas para atributos HTML.</p> 
+                <div class="caixa-codigo">
+                    <h2>Exemplo Código HTML:</h2>
+                    <pre class="codigo-html">
+                        &lt;a href="https://exemplo.com"&gt;Link&lt;/a&gt;
+                </div> 
+                <br>
+                <br>
+                <hr>
+                <br>
+                <br>
+                
+                <!-- HTML ENTITIES -->
+
+                <h2>HTML ENTITIES</h2>
+                <p>Caracteres reservados em HTML devem ser substituídos por entidades:<br>
+                    <br>
+                    &lt; (menos que) = & l t ;<br>
+                    &gt; (maior que) = & g t ;</p>
+                <br>
+                <h3>ENTIDADES</h3>
+                <p>HTML Entities são códigos especiais que representam caracteres reservados ou caracteres que têm significado especial no HTML. Eles são usados para exibir caracteres que, de outra forma, seriam interpretados pelo navegador como parte da marcação HTML.</p>
+                <p>& lt; e & gt; são usados para representar os símbolos de menor que &lt; e maior que &gt;, respectivamente. Isso evita que o navegador interprete o texto dentro desses símbolos como marcação HTML.<br>
+                    & quot; é usado para representar as aspas duplas ". Isso é útil quando você quer usar aspas duplas dentro de um atributo HTML que já está entre aspas duplas.<br>
+                    & copy; é usado para representar o símbolo de direitos autorais ©.
+                    Ao usar HTML Entities, você pode garantir que o texto seja exibido corretamente no navegador, mesmo se ele contiver caracteres especiais que normalmente teriam um significado especial em HTML.</p>
+
+                <br>
+                <br>
+                <hr>
+                <br>
+                <br>
+                
+                <!-- HTML SYMBOLS -->
+
+                <h2>HTML SYMBOLS </h2>
+                <p>HTML Symbols são caracteres especiais que podem ser inseridos em páginas da web usando códigos de entidades HTML ou nomes de entidades. Eles são úteis para exibir símbolos que não estão disponíveis no teclado ou para representar símbolos comuns de uma maneira mais legível.</p>
+                <div class="caixa-codigo">
+                    <h2>Exemplo Código HTML:</h2>
+                    <pre class="codigo-html">
+                        &lt;p&gt;& #60;p& #62; Este é um parágrafo & #60;/p& #62;&lt;/p&gt;
+                        &lt;p&gt;& #60;a href=& #34;https://exemplo.com& #34;& #62;Link& #60;/a& #62;&lt;/p&gt;
+                        &lt;p&gt;& #60;!-- Este é um comentário --& #62;&lt;/p>
+                        &lt;p&gt;& copy; 2024 Meu Site. Todos os direitos reservados.&lt;/p&gt;
+                </div> 
+                <br>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                        <p>&#60;p&#62; Este é um parágrafo &#60;/p&#62;</p>
+                        <p>&#60;a href=&#34;https://exemplo.com&#34;&#62;Link&#60;/a&#62;</p>
+                        <p>&#60;!-- Este é um comentário --&#62;</p>
+                        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+                    </div>
+
+                <br>
+                <br>
+                <hr>
+                <br>
+                <br>
+                
+                <!-- HTML EMOJIS -->
+
+                <h2>HTML EMOJIS </h2>
+                <p>Emojis podem adicionar uma dose extra de expressão e personalidade ao seu conteúdo HTML. Eles são representados por códigos especiais que você pode inserir diretamente no código HTML.</p>
+                <h3>USANDO CÓDIGOS UNICODE</h3>
+                <br>
+                <p>Você pode usar os códigos Unicode dos emojis diretamente em seu código HTML.</p>
+                <div class="caixa-codigo">
+                    <h2>Exemplo Código HTML:</h2>
+                    <pre class="codigo-html">
+                        &lt;p&gt;& #x1F601; Olá, tudo bem?&lt;/p&gt;
+                        &lt;p&gt;& #x1F44B; Tenha um ótimo dia!&lt;/p&gt;
+                </div> 
+                <br>
+                    <div class="caixa-exemplo">
+                        <p>&#x1F601; Olá, tudo bem?</p>
+                        <p>&#x1F44B; Tenha um ótimo dia!</p>
+                    </div>
+                <br>
+                <h3>USANDO ENTIDADES HTML</h3>
+                <br>
+                <p>Você também pode usar entidades HTML para adicionar emojis.</p>
+                <div class="caixa-codigo">
+                    <h2>Exemplo Código HTML:</h2>
+                    <pre class="codigo-html">
+                        &lt;p&gt;& #128513; Olá, tudo bem?&lt;/p&gt;
+                        &lt;p&gt;& #128077; Tenha um ótimo dia!&lt;/p&gt;
+                </div> 
+                <br>
+                    <div class="caixa-exemplo">
+                        <p>&#128513; Olá, tudo bem?</p>
+                        <p>&#128077; Tenha um ótimo dia!</p>
+                    </div>
+                <br>
+                <h3>USANDO EMOJIS DE NOMES CURTOS</h3>
+                <br>
+                <p>Você também pode usar entidades HTML para adicionar emojis.</p>
+                <div class="caixa-codigo">
+                    <h2>Exemplo Código HTML:</h2>
+                    <pre class="codigo-html">
+                        &lt;p&gt;& lt;3 Eu te amo! & #x1F60D;&lt;/p&gt;
+                        &lt;p&gt;:) Tenha um dia feliz! & #x1F603;&lt;/p&gt;
+                    </div>
+                <br>
+                    <div class="caixa-exemplo">
+                        <p>&lt;3 Eu te amo! &#x1F60D;</p>
+                        <p>:) Tenha um dia feliz! &#x1F603;</p>
+                    </div>
+
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+
+                    <!-- HTML CHARSETS -->
+
+                    <h2>HTML CHARSETS</h2>
+                    <p>O charset em HTML refere-se ao conjunto de caracteres que o navegador deve usar para interpretar e exibir o conteúdo do documento HTML. Definir corretamente o charset é fundamental para garantir que os caracteres especiais e acentuados sejam exibidos corretamente. O charset é definido na tag &lt;meta&gt; dentro da seção &lt;head&gt; do documento HTML.</p>
+                    <h3>USO DO CHARSET UTF-8</h3>
+                    <br>
+                    <p>Neste exemplo, o charset está definido como UTF-8, o que é amplamente recomendado devido à sua capacidade de representar uma grande variedade de caracteres de diferentes idiomas. A tag &lt;meta charset="UTF-8"&gt; assegura que o navegador interprete o conteúdo do documento HTML usando o conjunto de caracteres UTF-8.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;h1&gt;Charset em HTML&lt;/h1&gt;
+                            &lt;p&gt;Este é um exemplo de texto com acentuação: ç á é í ó ú&lt;/p&gt;
+                        </div>
+                    <p>Outros charsets comuns incluem ISO-8859-1 (também conhecido como Latin-1) e Windows-1252, mas eles têm limitações em relação à capacidade de representação de caracteres em diferentes idiomas. UTF-8 é preferido em situações onde a internacionalização é importante.</p>
+                    <p>Certifique-se sempre de definir o charset corretamente para garantir a exibição adequada de caracteres especiais, acentuados e de diferentes idiomas em suas páginas da web.</p>
+                    
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+
+                    <!-- HTML URL ENCODE -->
+
+                    <h2>HTML URL ENCODE</h2>
+                    <p>URL Encoding é o processo de converter caracteres especiais e não ASCII em uma sequência de caracteres que pode ser transmitida por uma URL de forma segura. Isso é necessário porque alguns caracteres têm significados especiais em URLs e podem ser interpretados de maneira diferente pelo navegador ou servidor se não forem codificados corretamente.</p>
+                    <h3>USANDO ENTIDADES ESPECIAIS</h3>
+                    <p>Em HTML, você pode usar entidades especiais para representar caracteres especiais. Por exemplo, o espaço pode ser representado como %20, o sinal de igual como %3D, e assim por diante.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;h1&gt;URL Encoding em HTML&lt;/h1&gt;
+                            &lt;p&gt;Link com espaços: &lt;a href="pagina%20com%20espacos.html">Página com Espaços&lt;/a&gt;&gt;/p&gt;
+                            &lt;p&gt;Link com caracteres especiais: &lt;a href="exemplo%3D1%26exemplo%3D2"&gt;Exemplo 1 & Exemplo 2&lt;/a&gt;&lt;/p&gt;
+                        </div>
+                    <br>
+                        <div class="caixa-exemplo">
+                            <h1>URL Encoding em HTML</h1>
+                            <p>Link com espaços: <a href="pagina%20com%20espacos.html">Página com Espaços</a></p>
+                            <p>Link com caracteres especiais: <a href="exemplo%3D1%26exemplo%3D2">Exemplo 1 & Exemplo 2</a></p>
+                        </div>
+                        <p>Neste exemplo, os caracteres especiais foram substituídos por suas representações codificadas. %20 representa o espaço e %3D representa o sinal de igual. Quando o navegador interpreta esses links, ele decodifica esses caracteres de volta para seus equivalentes originais.</p>
+                        <p>Além de caracteres especiais, é comum ver URLs com caracteres não ASCII codificados, como acentos em letras, por exemplo. O URL Encoding garante que esses caracteres sejam transmitidos corretamente na URL.</p>
+
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+
+                    <!-- HTML vs XHTML -->
+
+                    <h2>HTML vs XHTML</h2>
+                    <p>HTML (HyperText Markup Language) e XHTML (Extensible HyperText Markup Language) são versões diferentes da linguagem de marcação usada para criar páginas da web. Enquanto HTML é mais antigo e tem uma sintaxe mais flexível, o XHTML é uma versão mais estrita e bem formada do HTML, seguindo as regras do XML. Abaixo estão as principais diferenças entre HTML e XHTML:</p>
+                    <h3>HTML (HyperText Markup Language):</h3>
+                    <p>1. Sintaxe mais flexível: Em HTML, as tags podem ser escritas em maiúsculas ou minúsculas e não precisa ser fechada.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;p&gt;Este é um parágrafo não fechado.
+                            &lt;p&gt;Este é outro parágrafo.&lt;/p&gt;
+                    </div>
+                    <br>
+                    <p>2. Atributos não precisam de aspas: Os atributos em HTML podem ser especificados sem aspas.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;a href=https://exemplo.com&gt;Link&lt;/a&gt;
+                    </div>
+                    <br>
+                    <p>3. Namespace não é obrigatório: HTML não requer a declaração de um namespace.</p>
+                    <br>
+                    <h3>XHTML (Extensible HyperText Markup Language):</h3>
+                    <br>
+                    <p>1. Sintaxe bem formada: Em XHTML, todas as tags devem ser fechadas corretamente e escritas em minúsculas.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;p&gt;Este é um parágrafo fechado.&lt;/p&gt;
+                    </div>       
+                    <br>
+                    <p>Atributos devem ser escritos com aspas: Todos os atributos em XHTML devem ser envolvidos por aspas.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;a href="https://exemplo.com"&gt;Link&lt;/a&gt;
+                    </div>
+                    <br>
+                    <p>3. Namespace obrigatório: XHTML requer a declaração de um namespace XML.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                            "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+                    </div>
+
+
+
+
+
+
+
+
+
+                    
+
 
 
 

@@ -145,3 +145,11 @@ table {
     width:33%;  
     float:left;
   }
+
+  .city {
+    background-color: tomato;
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+  }
