@@ -2663,21 +2663,920 @@
                             &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
                             "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
                     </div>
-
-
-
-
-
-
-
-
-
                     
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
 
+                    <!-- HTML FORMS -->
 
+                    <h2>HTML FORMS</h2>
+                    <p>HTML Forms são elementos usados para coletar dados do usuário em uma página da web. Eles permitem que os visitantes insiram informações, como textos, números, seleções, etc., e enviem esses dados para o servidor web para processamento.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;h3&gt;Formulário de Contato&lt;/h3&gt;
+                            &lt;form action="processar_form.php" method="POST"&gt;
+                                &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+                                &lt;input type="text" id="nome" name="nome" required&gt;&lt;br&gt;&lt;br&gt;
+                        
+                                &lt;label for="email"&gt;Email:&lt;/label&gt;
+                                &lt;input type="email" id="email" name="email" required&gt;&lt;br&gt;&lt;br&gt;
+                        
+                                &lt;input type="submit" value="Enviar"&gt;
+                            &lt;/form&gt;
+                        </div>
+                        <div class="caixa-exemplo">
+                            <h2>Exemplo:</h2>
+                            <h3>Formulário de Contato</h3>
+                            <form action="processar_form.php" method="POST">
+                                <label for="nome">Nome:</label>
+                                <input type="text" id="nome" name="nome" required><br><br>
+                        
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required><br><br>
+                        
+                                <input type="submit" value="Enviar">
+                            </form>
+                        </div>
+                        <p>Neste exemplo: <br>
+                            <br>
+                            ➢ <i>&lt;form&gt;</i> é o elemento que envolve todo o formulário.<br>
+                            ➢ <i>action="processar_form.php"</i> indica para onde os dados do formulário serão enviados para processamento. Aqui, eles seriam enviados para um arquivo PHP chamado processar_form.php.<br>
+                            ➢ <i>method="POST"</i> especifica que os dados do formulário serão enviados usando o método HTTP POST.<br>
+                            ➢ <i>&lt;input&gt;</i> é usado para criar campos de entrada.<br>
+                            ➢ <i>type="text"</i> especifica que é um campo de texto.<br>
+                            ➢ <i>type="email"</i> especifica que é um campo de email. Isso ajuda a validar o formato do email.<br>
+                            ➢ <i>id</i> é um identificador único para o campo.<br>
+                            ➢ <i>name</i> é o nome do campo, que será usado para identificar os dados no lado do servidor.<br>
+                            ➢ <i>required</i> é um atributo que indica que o campo é obrigatório.<br><br>
+                            No lado do servidor, o arquivo processar_form.php receberia os dados enviados pelo formulário e poderia fazer o que fosse necessário com esses dados.</p>
+                            
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+
+                    <!-- HTML FORMS ATRIBUTES -->
+
+                    <h2>HTML FORMS ATRIBUTES</h2>
+                    <p>Os atributos de um formulário HTML são usados para fornecer informações adicionais sobre como o formulário deve ser processado ou exibido. Aqui estão alguns atributos comuns:</p>
+                    <p>➢ <i>action:</i> Especifica para onde os dados do formulário devem ser enviados quando o formulário é submetido.<br>
+                        ➢ <i>method:</i> Define o método HTTP a ser usado ao enviar o formulário. Os dois métodos mais comuns são GET e POST.<br>
+                        ➢ <i>name:</i> Define o nome do formulário. É usado para identificar o formulário no código JavaScript e no lado do servidor.<br>
+                        ➢ <i>target:</i> Especifica onde abrir a resposta recebida após a submissão do formulário, como _blank para abrir em uma nova janela.<br>
+                        ➢ <i>autocomplete:</i> Indica se o navegador deve habilitar o recurso de preenchimento automático para os campos do formulário.<br>
+                        ➢ <i>enctype:</i> Define o tipo de codificação de conteúdo usado ao enviar os dados do formulário. Geralmente usado em conjunto com o método POST quando envolvem uploads de arquivos.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                               &lt;h3&gt;Formulário de Contato&lt;/h3&gt;
+                                &lt;form action="processar_form.php" method="POST" target="_blank" autocomplete="on" enctype="multipart/form-data"&gt;
+                                    &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+                                    &lt;input type="text" id="nome" name="nome" required&gt;&lt;br&gt;&lt;br&gt;
+                            
+                                    &lt;label for="email"&gt;Email:&lt;/label&gt;
+                                    &lt;input type="email" id="email" name="email" required&gt;&lt;br&gt;&lt;br&gt;
+
+                                    &lt;label for="arquivo"&gt;Enviar arquivo:&lt;/label&gt;
+                                    &lt;input type="file" id="arquivo" name="arquivo"&gt;&lt;br&gt;&lt;br&gt;
+                            
+                                    &lt;input type="submit" value="Enviar"&gt;
+                                &lt;/form&gt;
+                            </div>
+                            <div class="caixa-exemplo">
+                                <h2>Exemplo:</h2>
+                                <h3>Formulário de Contato</h3>
+                                <form action="processar_form.php" method="POST" target="_blank" autocomplete="on" enctype="multipart/form-data">
+                                    <label for="nome">Nome:</label>
+                                    <input type="text" id="nome" name="nome" required><br><br>
+                            
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" required><br><br>
+
+                                    <label for="arquivo">Enviar arquivo:</label>
+                                    <input type="file" id="arquivo" name="arquivo"><br><br>
+                            
+                                    <input type="submit" value="Enviar">
+                                </form>
+                            </div>    
+                    <p>Neste exemplo:<br>
+                        <br>
+                        ➢ <i>target="_blank"</i> indica que a resposta será exibida em uma nova janela do navegador.<br>
+                        ➢ <i>autocomplete="on"</i> permite que o navegador preencha automaticamente os campos do formulário, se suportado.<br>
+                        ➢ <i>enctype="multipart/form-data"</i> é usado para permitir o envio de arquivos através do formulário.<br><br>
+                        Cada atributo tem uma função específica e pode ser útil em diferentes situações, dependendo dos requisitos do formulário.</p>
+
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+
+                    <!-- HTML FORMS ELEMENTS -->
+
+                    <h2>HTML FORMS ELEMENTS</h2>
+                    <p>Os elementos de formulário HTML são usados para coletar dados do usuário. Aqui estão alguns dos elementos mais comuns:</p><br>
+                    <h3>&lt;input&gt;</h3>
+                    <br>
+                    <p> O elemento &lt;input&gt; é o  mais versátil e pode ser usado de várias maneiras, como:<br><br>
+                        ➢  <i>type="text":</i> Campo de entrada de texto simples.<br>
+                        ➢  <i>type="password":</i> Campo de entrada de senha.<br>
+                        ➢  <i>type="checkbox":</i> Caixa de seleção, que permite ao usuário selecionar uma ou mais opções.<br>
+                        ➢  <i>type="radio":</i> Botão de rádio, que permite ao usuário selecionar uma opção entre várias.<br>
+                        ➢  <i>type="submit":</i> Botão de envio, que envia os dados do formulário para o servidor.<br>
+                        ➢  <i>type="file":</i> Campo de seleção de arquivo, permite ao usuário fazer upload de arquivos.<br>
+                        ➢  <i>type="email":</i> Campo de entrada para endereço de e-mail.<br>
+                        ➢  <i>type="number":</i> Campo de entrada para números.<br>
+                        ➢  <i>type="date":</i> Campo de entrada para data.<br>
+                        ➢  <i>type="hidden":</i> Campo oculto, cujo valor não é visível para o usuário. </p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;input type="text" name="username"&gt;
+                            &lt;input type="password" name="password"&gt;
+                            &lt;input type="checkbox" name="hobby" value="reading"&gt;
+                            &lt;input type="radio" name="gender" value="male"&gt;
+                            &lt;input type="submit" value="Submit"&gt;
+                            &lt;input type="file" name="avatar"&gt;
+                            </div>
+                            <div class="caixa-exemplo">
+                                <h2>Exemplo:</h2>
+                                <input type="text" name="username">
+                                <input type="password" name="password">
+                                <input type="checkbox" name="hobby" value="reading">
+                                <input type="radio" name="gender" value="male">
+                                <input type="submit" value="Submit">
+                                <input type="file" name="avatar">
+                            </div>    
+                    <br>
+                    <h3>&lt;select&gt;</h3>
+                    <br> 
+                    <p>Cria um menu suspenso (dropdown) para selecionar uma opção.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;select name="car"&gt;
+                                &lt;option value="volvo"&gt;Volvo&lt;/option&gt;
+                                &lt;option value="saab"&gt;Saab&lt;/option&gt;
+                                &lt;option value="fiat"&gt;Fiat&lt;/option&gt;
+                                &lt;option value="audi"&gt;Audi&lt;/option&gt;
+                            &lt;/select&gt;
+                            </div>
+                            <div class="caixa-exemplo">
+                                <h2>Exemplo:</h2>
+                                <select name="car">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="fiat">Fiat</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>           
+                    <br>
+                    <h3>&lt;textarea&gt;</h3>
+                    <br> 
+                    <p>Cria uma área de texto multi-linha para entrada de texto.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;textarea name="message" rows="4" cols="50"&gt;&lt;/textarea&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                            <textarea name="message" rows="4" cols="50"></textarea>
+                    </div>          
+                    <br>
+                    <h3>&lt;button&gt;</h3>
+                    <br> 
+                    <p>Cria um botão dentro do formulário.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;button type="button"&gt;Clique aqui&lt;/button&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                            <button type="button">Clique aqui</button>
+                    </div>   
+                    <br>
+                    <h3>&lt;label&gt;</h3>
+                    <br> 
+                    <p>Rótulo para associar a um elemento de formulário. Isso ajuda na acessibilidade e usabilidade.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;label for="username"&gt;Username:&lt;/label&gt;
+                            &lt;input type="text" id="username" name="username"&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username">
+                    </div>   
+                    <p>Esses são apenas alguns dos elementos de formulário HTML mais comuns. Eles podem ser combinados e personalizados de várias maneiras para criar formulários que atendam às necessidades específicas do seu site.</p>
+
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+
+                    <!-- HTML INPUT TYPES -->
+
+                    <h2>HTML INPUT TYPES</h2>
+                    <p>Os tipos de entrada HTML definem o comportamento e o formato dos dados que os usuários podem inserir. Aqui estão alguns dos tipos de entrada mais comuns:</p><br>
+                    <h3>text</h3>
+                    <br> 
+                    <p>Cria um campo de texto simples para entrada de texto.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;input type="text" name="username"&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                            <input type="text" name="username">
+                    </div>          
+                    <br>
+                    <h3>password</h3>
+                    <br> 
+                    <p>Cria um campo de senha onde os caracteres digitados são ocultados.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;input type="password" name="password"&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                            <input type="password" name="password">
+                    </div>          
+                    <br>
+                    <h3>checkbox</h3>
+                    <br> 
+                    <p>Cria uma caixa de seleção que permite aos usuários selecionar uma ou mais opções.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;input type="checkbox" name="hobby" value="reading"&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                            <input type="checkbox" name="hobby" value="reading">
+                    </div>          
+                    <br>
+                    <h3>radio</h3>
+                    <br> 
+                    <p>Cria botões de rádio onde os usuários podem selecionar uma opção entre várias.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;input type="radio" name="gender" value="male"&gt;
+                            &lt;input type="radio" name="gender" value="female"&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                            <input type="radio" name="gender" value="male">
+                            <input type="radio" name="gender" value="female">
+                    </div>          
+                    <br>
+                    <h3>submit</h3>
+                    <br> 
+                    <p>Cria um botão que envia os dados do formulário para o servidor.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;input type="submit" value="Submit"&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                            <input type="submit" value="Submit">
+                    </div>          
+                    <br>
+                    <h3>file</h3>
+                    <br> 
+                    <p>Cria um campo para fazer upload de arquivos.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;input type="file" name="avatar"&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                            <input type="file" name="avatar">
+                    </div>          
+                    <br>
+                    <h3>email</h3>
+                    <br> 
+                    <p>Cria um campo de entrada para endereço de e-mail.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;input type="email" name="email"&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                            <input type="email" name="email">
+                    </div>          
+                    <br>
+                    <h3>number</h3>
+                    <br> 
+                    <p>Cria um campo de entrada para números.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;input type="number" name="quantity" min="1" max="100"&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                            <input type="number" name="quantity" min="1" max="100">
+                    </div>          
+                    <br>
+                    <h3>date</h3>
+                    <br> 
+                    <p>Cria um campo de entrada para data.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;input type="date" name="birthdate"&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                            <input type="date" name="birthdate">
+                    </div>          
+                    <br>
+                    <h3>hidden</h3>
+                    <br> 
+                    <p>Cria um campo oculto cujo valor não é visível para o usuário.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;input type="hidden" name="secret_token" value="abcd1234"&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                            <input type="hidden" name="secret_token" value="abcd1234">
+                    </div>          
+                    <br>
+                    <p>Esses são apenas alguns dos tipos de entrada mais comuns. Existem outros, como tel, url, range, etc., que podem ser úteis em situações específicas. Cada tipo de entrada tem seu próprio propósito e validação de dados, o que pode ser útil dependendo das necessidades do seu formulário.</p>
+
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+
+                    <!-- HTML INPUT ATRIBUTES -->
+
+                    <h2>HTML INPUT ATRIBUTES</h2>
+                    <p>Os atributos dos elementos de entrada HTML são usados para fornecer informações adicionais sobre os campos de entrada. Aqui estão alguns atributos comuns:</p><br>
+                    <h3>id</h3>
+                    <br> 
+                    <p>Define um identificador único para o elemento.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;input type="text" id="username" name="username"&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                            <input type="text" id="username" name="username">
+                    </div>          
+                    <br>
+                    <h3>name</h3>
+                    <br> 
+                    <p>Define o nome do campo de entrada. Este é o nome que será enviado para o servidor quando o formulário for enviado.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;input type="username" name="username"&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                            <input type="username" name="username">
+                    </div>          
+                    <br>
+                    <h3>value</h3>
+                    <br> 
+                    <p>Define um valor padrão para o campo de entrada.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;input type="text" name="username" value="JohnDoe"&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                            <input type="name" name="username" value="JohnDoe">
+                    </div>          
+                    <br>
+                    <h3>placeholder</h3>
+                    <br> 
+                    <p>Exibe um texto temporário dentro do campo de entrada para fornecer uma dica sobre o que deve ser inserido.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;input type="email" name="email" placeholder="Seu endereço de email"&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                            <input type="email" name="email" placeholder="Seu endereço de email">
+                    </div>          
+                    <br>
+                    <h3>required</h3>
+                    <br> 
+                    <p>Indica que o campo de entrada é obrigatório e não pode ser enviado vazio.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;input type="text" name="username" required&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                            <input type="text" name="username" required>
+                    </div>          
+                    <br>
+                    <h3>disabled</h3>
+                    <br> 
+                    <p>Desativa o campo de entrada, impedindo que os usuários insiram dados nele.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;input type="text" name="username" disabled&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                            <input type="text" name="username" disabled>
+                    </div>          
+                    <br>
+                    <h3>readonly</h3>
+                    <br> 
+                    <p>Torna o campo de entrada somente leitura, impedindo que os usuários alterem seu valor.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;input type="text" name="username" value="JaneDoe" readonly&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                            <input type="text" name="username" value="JaneDoe" readonly>
+                    </div>          
+                    <br>
+                    <h3>maxlength</h3>
+                    <br> 
+                    <p>Limita o número máximo de caracteres que podem ser inseridos no campo de entrada.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;input type="text" name="username" maxlength="20"&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                            <input type="text" name="username" maxlength="20">
+                    </div>          
+                    <br>
+                    <h3>min e max</h3>
+                    <br> 
+                    <p>Define os valores mínimo e máximo para campos numéricos.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;input type="number" name="age" min="18" max="100"&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                            <input type="number" name="age" min="18" max="100">
+                    </div>          
+                    <br>
+                    <h3>step</h3>
+                    <br> 
+                    <p>Define o intervalo em que os valores numéricos podem ser incrementados ou decrementados.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;input type="number" name="quantity" min="1" max="10" step="1"&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                            <input type="number" name="quantity" min="1" max="10" step="1">
+                    </div>          
+                    <br>
+                    <h3>pattern</h3>
+                    <br> 
+                    <p>Define uma expressão regular para validar o valor do campo.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;input type="text" name="zipcode" pattern="[0-9]{5}"&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                            <input type="text" name="zipcode" pattern="[0-9]{5}">
+                    </div>          
+                    <br>
+                    <p>Esses são apenas alguns dos atributos mais comuns. Eles podem ser usados em combinação para personalizar o comportamento e a aparência dos campos de entrada de acordo com as necessidades do seu formulário.</p>
+                    
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+
+                    <!-- INPUT FORM ATRIBUTES -->
+
+                    <h2>INPUT FORM ATRIBUTES</h2>
+                    <p>Os atributos de um formulário HTML podem ser usados para controlar seu comportamento, validação e estilo. Aqui estão alguns dos atributos mais comuns:</p><br>
+                    <h3>action</h3>
+                    <br> 
+                    <p>Especifica para onde os dados do formulário devem ser enviados quando o formulário é submetido.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;form action="/submit_form.php" method="post"&gt;
+                    </div>         
+                    <br>
+                    <h3>method</h3>
+                    <br> 
+                    <p>Define o método HTTP a ser usado ao enviar o formulário. Os métodos comuns são GET e POST.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;form action="/submit_form.php" method="post"&gt;
+                    </div>         
+                    <br>
+                    <h3>target</h3>
+                    <br> 
+                    <p>Especifica onde abrir a resposta recebida após a submissão do formulário, como _blank para abrir em uma nova janela.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;form action="/submit_form.php" method="post" target="_blank"&gt;
+                    </div>         
+                    <br>
+                    <h3>autocomplete</h3>
+                    <br> 
+                    <p>Controla se o preenchimento automático é ativado para os campos do formulário.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;form action="/submit_form.php" method="post" autocomplete="on"&gt;
+                    </div>          
+                    <br>
+                    <h3>enctype</h3>
+                    <br> 
+                    <p>Define o tipo de codificação de conteúdo usado ao enviar os dados do formulário. Normalmente usado com o método POST quando envolve upload de arquivos.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;form action="/submit_form.php" method="post" enctype="multipart/form-data"&gt;
+                    </div>         
+                    <br>
+                    <h3>novalidate</h3>
+                    <br> 
+                    <p>Desativa a validação de formulário nativa do navegador. Útil para validar o formulário com JavaScript personalizado.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;form action="/submit_form.php" method="post" novalidate&gt;
+                    </div>          
+                    <br>
+                    <h3>accept-charset</h3>
+                    <br> 
+                    <p>Define o conjunto de caracteres a ser usado para codificar os dados do formulário ao enviá-los ao servidor.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;form action="/submit_form.php" method="post" accept-charset="UTF-8"&gt;
+                    </div>         
+                    <br>
+                    <h3>name</h3>
+                    <br> 
+                    <p>Define um nome para o formulário, que é útil para referenciá-lo com JavaScript ou ao manipular dados no servidor.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;form action="/submit_form.php" method="post" name="myForm"&gt;
+                    </div>         
+                    <br>
+                    <h3>id</h3>
+                    <br> 
+                    <p>Define um identificador exclusivo para o formulário, que pode ser usado para referenciá-lo com CSS ou JavaScript.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;form action="/submit_form.php" method="post" id="myForm"&gt;
+                    </div>          
+                    <br>
+                    <h3>class</h3>
+                    <br> 
+                    <p>Define uma ou mais classes para o formulário, permitindo estilização personalizada com CSS.</p>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;form action="/submit_form.php" method="post" class="my-form"&gt;
+                    </div>       
+                    <br>
+                    <p>Esses são alguns dos atributos mais comuns usados em elementos de formulário HTML. Cada um tem um propósito específico e pode ser útil dependendo dos requisitos do seu formulário.</p>
+
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+
+                    <!-- HTML CANVAS -->
+
+                    <h2>HTML CANVAS</h2>
+                    <p>O elemento &lt;canvas&gt; é uma área rectangular na qual você pode desenhar gráficos, gráficos, jogos ou outras renderizações visuais na web. Ele oferece uma maneira de criar gráficos dinâmicos e interativos usando JavaScript</p><br>
+                    <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;
+
+                            &lt;script&gt;
+                                // Obtém o elemento canvas e seu contexto de desenho
+                                var canvas = document.getElementById("myCanvas");
+                                var ctx = canvas.getContext("2d");
+
+                                // Desenha um retângulo vermelho no canvas
+                                ctx.fillStyle = "red"; // Define a cor de preenchimento para vermelho
+                                ctx.fillRect(10, 10, 150, 80); // Desenha um retângulo nas coordenadas (10, 10) com largura 150 e altura 80
+                                &lt;/script&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                        <canvas id="myCanvas" width="200" height="100"></canvas>
+
+                        <script>
+                            // Obtém o elemento canvas e seu contexto de desenho
+                            var canvas = document.getElementById("myCanvas");
+                            var ctx = canvas.getContext("2d");
+
+                            // Desenha um retângulo vermelho no canvas
+                            ctx.fillStyle = "red"; // Define a cor de preenchimento para vermelho
+                            ctx.fillRect(10, 10, 150, 80); // Desenha um retângulo nas coordenadas (10, 10) com largura 150 e altura 80
+                        </script>
+                    </div>   
+                    <p>Neste exemplo:<br>
+                        <br>
+                            ➢ <i>&lt;/canvas&gt;</i> é o elemento HTML usado para criar a área de desenho.<br>
+                            ➢ <i>id="myCanvas"</i> atribui um identificador ao canvas, que pode ser usado para acessá-lo via JavaScript.<br>
+                            ➢ <i>width="200" e height="100"</i> definem a largura e altura do canvas em pixels.<br>
+                            ➢ No JavaScript, <i>var ctx = canvas.getContext("2d");</i> obtém o contexto de desenho 2D do canvas.<br>
+                            ➢ <i>ctx.fillStyle = "red";</i> define a cor de preenchimento para vermelho.<br>
+                            ➢ <i>ctx.fillRect(10, 10, 150, 80);</i> desenha um retângulo vermelho nas coordenadas (10, 10) com largura de 150 pixels e altura de 80 pixels.<br><br>
+                        Este é apenas um exemplo simples. Com o HTML Canvas, você pode desenhar formas, textos, imagens e animações complexas, permitindo uma grande variedade de aplicações, desde jogos até visualizações de dados.
+                        </p>   
+                        
+                        <br>
+                        <br>
+                        <hr>
+                        <br>
+                        <br>
+    
+                        <!-- HTML SVG -->
+    
+                        <h2>HTML SVG</h2>
+                        <p> O SVG (Scalable Vector Graphics) é uma linguagem baseada em XML para descrever gráficos vetoriais bidimensionais. Ele permite criar gráficos escaláveis e interativos diretamente no HTML.</p><br>
+                        <div class="caixa-codigo">
+                        <h2>Exemplo Código HTML:</h2>
+                        <pre class="codigo-html">
+                            &lt;h3&gt;SVG Example&lt;/h3&gt;
+
+                            &lt;!-- SVG inline --&gt;
+                            &lt;svg width="200" height="200"&gt;
+                                &lt;!-- Desenha um círculo --&gt;
+                                &lt;circle cx="100" cy="100" r="80" fill="red"/&gt;
+                            &lt;/svg&gt;
+
+                            &lt;!-- SVG externo --&gt;
+                            &lt;object type="image/svg+xml" data="circle.svg" width="200" height="200"&gt;
+                                Seu navegador não suporta SVG
+                            &lt;/object&gt;
+                    </div>
+                    <div class="caixa-exemplo">
+                        <h2>Exemplo:</h2>
+                        <h3>SVG Example</h3>
+
+                        <!-- SVG inline -->
+                        <svg width="200" height="200">
+                            <!-- Desenha um círculo -->
+                            <circle cx="100" cy="100" r="80" fill="red"/>
+                        </svg>
+
+                        <!-- SVG externo -->
+                        <object type="image/svg+xml" data="circle.svg" width="200" height="200">
+                            Seu navegador não suporta SVG
+                        </object>
+                    </div>  
+                    <p>Neste exemplo:<br>
+                        <br>
+                        Dentro da tag &lt;svg&gt;, você pode definir diferentes elementos gráficos, como círculos, retângulos, linhas, texto, etc.<br>
+                        &lt;circle&gt; é um elemento SVG usado para desenhar círculos. Os atributos cx, cy e r definem o centro e o raio do círculo, e fill define a cor de preenchimento.<br>
+                        No exemplo acima, há dois tipos de SVG:<br>
+                        Um SVG inline, diretamente no HTML, entre as tags &lt;svg&gt;.<br>
+                        Um SVG externo, incluído usando a tag &lt;object&gt;. Neste caso, o arquivo circle.svg contém o mesmo círculo.</p> 
+                        
+                        <br>
+                        <br>
+                        <hr>
+                        <br>
+                        <br>
+    
+                        <!-- HTML MEDIA -->
+    
+                        <h2>HTML MEDIA</h2>
+                        <p>HTML5 introduziu vários elementos para incorporar e exibir mídia, como áudio, vídeo e imagens em páginas da web. Aqui estão os principais elementos para incorporar mídia:</p><br>
+                        <h3>&lt;img&gt;</h3>
+                        <br>
+                        <p>Usado para exibir imagens.</p>
+                        <div class="caixa-codigo">
+                            <h2>Exemplo Código HTML:</h2>
+                            <pre class="codigo-html">
+                                &lt;img src="caminho/para/imagem.jpg" alt="Descrição da Imagem"&gt;
+                        </div>
+                        <br>
+                        <h3>&lt;audio&gt;</h3>
+                        <br>
+                        <p>Usado para incluir áudio em uma página.</p>
+                        <div class="caixa-codigo">
+                            <h2>Exemplo Código HTML:</h2>
+                            <pre class="codigo-html">
+                                &lt;audio controls&gt;
+                                    &lt;source src="caminho/para/audio.mp3" type="audio/mpeg"&gt;
+                                    Seu navegador não suporta o elemento de áudio.
+                                &lt;/audio&gt;
+                        </div>
+                        <br>
+                        <h3>&lt;video&gt;</h3>
+                        <br>
+                        <p>Usado para incluir áudio em uma página.</p>
+                        <div class="caixa-codigo">
+                            <h2>Exemplo Código HTML:</h2>
+                            <pre class="codigo-html">
+                                &lt;video controls width="320" height="240"&gt;
+                                    &lt;source src="caminho/para/video.mp4" type="video/mp4"&gt;
+                                    Seu navegador não suporta o elemento de vídeo.
+                                &lt;/video&gt;
+                        </div>
+                        <br>
+                        <h3>&lt;iframe&gt;</h3>
+                        <br>
+                        <p>Usado para incluir conteúdo externo, como páginas web, em uma página.</p>
+                        <div class="caixa-codigo">
+                            <h2>Exemplo Código HTML:</h2>
+                            <pre class="codigo-html">
+                                &lt;iframe src="https://www.youtube.com/embed/VIDEO_ID"&gt;&lt;/iframe&gt;
+                        </div>
+                        <br>
+                        <p>Além disso, existem atributos comuns para esses elementos:<br>
+                            <br>
+                            ➢ <i>src:</i> Especifica a localização do recurso a ser incorporado (caminho do arquivo ou URL).<br>
+                            ➢ <i>alt:</i> Texto alternativo para imagens, exibido se a imagem não puder ser carregada.<br>
+                            ➢ <i>controls:</i> Adiciona controles de reprodução ao áudio e ao vídeo.<br>
+                            ➢ <i>width e height:</i> Define a largura e a altura do elemento de vídeo.<br>
+                            ➢ <i>type:</i> Especifica o tipo MIME do recurso (para &lt;source&gt; dentro de &lt;audio&gt; e &lt;video&gt;).<br>
+                            ➢ <i>autoplay:</i> Faz com que o áudio ou vídeo comece a ser reproduzido automaticamente.<br>
+                            ➢ <i>loop:</i> Reproduz o áudio ou vídeo em loop.<br>
+                            ➢ <i>preload:</i> Especifica como o áudio ou vídeo deve ser carregado quando a página é carregada.<br><br>
+                            A inclusão de mídia em uma página da web permite uma experiência mais rica e envolvente para os usuários, seja por meio de imagens, vídeos ou áudios.</p>
+                        
+                        <br>
+                        <br>
+                        <hr>
+                        <br>
+                        <br>
+    
+                        <!-- HTML VÍDEO -->
+    
+                        <h2>HTML VÍDEO</h2>
+                        <p>O elemento HTML &lt;video&gt; é usado para incorporar vídeos em uma página da web. Aqui está um exemplo básico de como usar o elemento &lt;video&gt;:</p><br>
+                        <div class="caixa-codigo">
+                            <h2>Exemplo Código HTML:</h2>
+                            <pre class="codigo-html">
+                                &lt;video controls width="640" height="360"&gt;
+                                    &lt;source src="img/Lady Gaga's artRAVE interlude - intro.mp4" type="video/mp4"&gt;
+                        </div>
+                        <div class="caixa-exemplo">
+                            <h2>Exemplo:</h2>
+                            <video controls width="640" height="360">
+                                <source src="img/Lady Gaga's artRAVE interlude - intro.mp4" type="video/mp4">
+                        </div>  
+                        <p>Neste exemplo:<br>
+                            <br>
+                            ➢ O elemento &lt;video&gt; é usado para exibir o vídeo.<br>
+                            ➢ O atributo controls adiciona controles de reprodução padrão (como play, pause, volume) ao vídeo.<br>
+                            ➢ Os atributos width e height definem as dimensões do vídeo em pixels.<br>
+                            ➢  O elemento &lt;source&gt; é usado para especificar a localização do vídeo e o tipo MIME do arquivo de vídeo.</p>
+                        <p>Certifique-se de ter um arquivo de vídeo video.mp4 no mesmo diretório que o arquivo HTML, ou ajuste o atributo src para o local correto do vídeo.<br>
+                            <br>
+                            Você pode personalizar ainda mais o elemento &lt;video&gt; adicionando atributos como <i>autoplay</i> (para reprodução automática), <i>loop</i> (para reprodução em loop) e <i>preload</i> (para carregar o vídeo automaticamente quando a página é carregada).</p>
+
+                        
+                        <br>
+                        <br>
+                        <hr>
+                        <br>
+                        <br>
+    
+                        <!-- HTML ÁUDIO -->
+    
+                        <h2>HTML ÁUDIO</h2>
+                        <p>O elemento HTML &lt;audio&gt; é usado para incorporar áudio em uma página da web.</p><br>
+                        <div class="caixa-codigo">
+                            <h2>Exemplo Código HTML:</h2>
+                            <pre class="codigo-html">
+                                &lt;audio controls&gt;
+                                    &lt;source src="audio/Chromatica II.mp3" type="audio/mp3"&gt;
+                        </div>
+                        <div class="caixa-exemplo">
+                            <h2>Exemplo:</h2>
+                            <audio controls>
+                                <source src="audio/Chromatica II.mp3" type="audio/mp3">
+                        </div>    
+                        <p>Neste exemplo:<br>
+                            <br>
+                            ➢ O elemento &lt;audio&gt; é usado para exibir o áudio.<br>
+                            ➢ O atributo controls adiciona controles de reprodução padrão (como play, pause, volume) ao áudio.<br>
+                            ➢ O elemento &lt;source&gt; é usado para especificar a localização do áudio e o tipo MIME do arquivo de áudio.</p>
+                        <p>Certifique-se de ter um arquivo de áudio audio.mp3 no mesmo diretório que o arquivo HTML, ou ajuste o atributo src para o local correto do áudio.<br>
+                            <br>
+                            Você pode personalizar ainda mais o elemento &lt;audio&gt; adicionando atributos como <i>autoplay</i> (para reprodução automática), <i>loop</i> (para reprodução em loop) e <i>preload</i> (para carregar o áudio automaticamente quando a página é carregada).</p>  
+                        
+                            
+                        <br>
+                        <br>
+                        <hr>
+                        <br>
+                        <br>
+    
+                        <!-- HTML DRAG/DROP -->
+    
+                        <h2>HTML DRAG/DROP </h2>
+                        <p>HTML5 introduziu recursos nativos para arrastar e soltar elementos em uma página da web. </p><br>
+                        <div class="caixa-codigo">
+                            <h2>Exemplo Código HTML:</h2>
+                            <pre class="codigo-html">
+                                &lt;!DOCTYPE html&gt;
+                                &lt;html lang="en"&gt;
+                                &lt;head&gt;
+                                    &lt;meta charset="UTF-8"&gt;
+                                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                    &lt;title&gt;HTML Drag and Drop Example&lt;/title&gt;
+                                    &lt;style&gt;
+                                        #div1, #div2 {
+                                            width: 250px;
+                                            height: 70px;
+                                            padding: 10px;
+                                            border: 1px solid black;
+                                            margin: 10px;
+                                            display: inline-block;
+                                        }
+                                    &lt;/style&gt;
+                                    &lt;script&gt;
+                                        function allowDrop(event) {
+                                            event.preventDefault(); // Evita que o navegador trate o elemento como um destino padrão
+                                        }
+
+                                        function drag(event) {
+                                            event.dataTransfer.setData("text", event.target.id); // Define os dados a serem transferidos
+                                        }
+
+                                        function drop(event) {
+                                            event.preventDefault(); // Evita que o navegador abra o arquivo quando solto
+                                            var data = event.dataTransfer.getData("text"); // Obtém os dados transferidos
+                                            event.target.appendChild(document.getElementById(data)); // Adiciona o elemento arrastado ao destino
+                                        }
+                                    &lt;/script&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+
+                                    &lt;h2&gt;Arraste e solte os elementos&lt;/h2&gt;
+
+                                    &lt;!-- Elemento a ser arrastado --&gt;
+                                    &lt;div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"&gt;
+                                    &lt;img id="drag1" src="https://www.w3schools.com/html/img_logo.gif" draggable="true" ondragstart="drag(event)" width="88" height="31"&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;!-- Área de destino --&gt;
+                                    &lt;div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">&lt;/div&gt;
+
+                                &lt;/body&gt;
+                                &lt;/html&gt;
+
+                        </div>
+                        <p>Neste exemplo:<br>
+                            <br>
+                            ➢ O elemento &lt;img&gt; é configurado como arrastável usando o atributo draggable="true".<br>
+                            ➢ Quando o usuário começa a arrastar o elemento, o evento dragstart é acionado, chamando a função JavaScript drag(event), que define os dados a serem transferidos usando event.dataTransfer.setData().<br>
+                            ➢ Os elementos que podem receber um item arrastado têm os eventos dragover e drop associados a eles. No exemplo, esses eventos são tratados pelas funções allowDrop(event) e drop(event).<br>
+                            ➢ No evento drop, o elemento arrastado é recuperado usando event.dataTransfer.getData(), e então é adicionado ao destino usando appendChild().<br><br>
+                            Lembre-se de que este é um exemplo simples. Você pode estilizar e expandir essas funções conforme necessário para atender aos requisitos específicos do seu projeto.</p>
+                        
 
 
     <footer>
-        <p>&co
+        <p>FATEC - Franca 2024
 </body>
 </html>
